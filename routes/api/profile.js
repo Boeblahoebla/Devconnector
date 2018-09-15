@@ -14,7 +14,7 @@ const router = express.Router();
 // @access  Public
 
 router.get('/test', (req, res) => {
-    res.json({ message: "Profile works" });
+    res.json({ msg: "Profile works" });
 });
 
 //////////////

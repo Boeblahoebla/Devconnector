@@ -8,6 +8,8 @@ const mongoose = require('mongoose');
 const usersRoute = require('./routes/api/users');
 const profileRoute = require('./routes/api/profile');
 const postsRoute = require('./routes/api/posts');
+const bodyParser = require('body-parser');
+const passport = require('passport');
 
 const app = express();
 
@@ -24,17 +26,18 @@ mongoose.connect(db, { useNewUrlParser: true })
 // Middleware //
 ///////////////
 
+// forms & parsing
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
+
+// Authentication & Passport Config (strategy)
+app.use(passport.initialize());
+require('./config/passport')(passport);
+
+// Routes
 app.use('/api/users', usersRoute);
 app.use('/api/profile', profileRoute);
 app.use('/api/posts', postsRoute);
-
-//////////////////
-// GET request //
-////////////////
-
-app.get('/', (req, res) => {
-    res.send('Hello there');
-});
 
 ////////////////////////////
 // Server initialisation //
