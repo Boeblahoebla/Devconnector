@@ -4,10 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/routes/api/users.js" description="// @route   GET api/users/register&#10;// @desc    Reg..." line="31" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63b44a66-c0f0-4b49-9f00-29798cd8d194" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/models/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="63b44a66-c0f0-4b49-9f00-29798cd8d194" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -23,8 +20,8 @@
       <file leaf-file-name="Profile.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/Profile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="56" column="50" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
+            <state relative-caret-position="-272">
+              <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -170,7 +167,7 @@
       <workItem from="1536931145888" duration="633000" />
       <workItem from="1536931795591" duration="2353000" />
       <workItem from="1537016877861" duration="10021000" />
-      <workItem from="1537029956032" duration="9179000" />
+      <workItem from="1537029956032" duration="9424000" />
     </task>
     <task id="LOCAL-00001" summary="Created user model&#10;-&gt; Created registration logic to users.js&#10;-&gt; Created login logic through username &amp; password&#10;-&gt; Created JSON web token&#10;-&gt; Added JWT strategy">
       <created>1537030166778</created>
@@ -193,11 +190,25 @@
       <option name="project" value="LOCAL" />
       <updated>1537100437446</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Crated the Profile MongoDB schema">
+      <created>1537104453730</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1537104453730</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fixed some typo's in the mongoDB Profile schema">
+      <created>1537104579374</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1537104579374</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22186000" />
+    <option name="totallyTimeSpent" value="22431000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -233,7 +244,9 @@
     <MESSAGE value="Created user model&#10;-&gt; Created registration logic to users.js&#10;-&gt; Created login logic through username &amp; password&#10;-&gt; Created JSON web token&#10;-&gt; Added JWT strategy" />
     <MESSAGE value="Formatted some lines in users.js" />
     <MESSAGE value="Added validation to login &amp; register routes&#10;&#10;Library used: Validator&#10;&#10;Tested &amp; benchmarked with Postman" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added validation to login &amp; register routes&#10;&#10;Library used: Validator&#10;&#10;Tested &amp; benchmarked with Postman" />
+    <MESSAGE value="Crated the Profile MongoDB schema" />
+    <MESSAGE value="fixed some typo's in the mongoDB Profile schema" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed some typo's in the mongoDB Profile schema" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/server.js">
@@ -477,8 +490,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/Profile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="56" column="50" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
+        <state relative-caret-position="-272">
+          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
