@@ -18,15 +18,14 @@ const passport = require('passport');
 // @route   GET api/users/test
 // @desc    Tests users route
 // @access  Public
-
 router.get('/test', (req, res) => {
     res.json({ msg: "Users works" });
 });
 
+
 // @route   GET api/users/register
 // @desc    Register users route
 // @access  Public
-
 router.post('/register', async (req, res) => {
     // Find already registered email
     User.findOne({ email: req.body.email })
@@ -36,9 +35,9 @@ router.post('/register', async (req, res) => {
         } else {
             const avatar = gravatar.url(req.body.email, {
                 protocol: 'https', // HTTPS protocol
-                s: '200', // Size
-                r: 'pg', // rating
-                d: 'mm' // Default
+                s: '200',         // Size
+                r: 'pg',         // rating
+                d: 'mm'         // Default
             });
 
             let newUser = new User({
@@ -65,10 +64,10 @@ router.post('/register', async (req, res) => {
     });
 });
 
+
 // @route   GET api/users/login
 // @desc    Login users route -> Returns JSON web token
 // @access  Public
-
 router.post('/login', (req, res) => {
     const email = req.body.email;
     const password = req.body.password;
@@ -83,7 +82,6 @@ router.post('/login', (req, res) => {
         bcrypt.compare(password, user.password).then(isMatch => {
             if(isMatch) {
                 // Create and return a JSON web token
-
                 const payload = { id: user.id, name: user.name, avatar: user.avatar };
 
                 // Sign the JWT
@@ -98,12 +96,14 @@ router.post('/login', (req, res) => {
     })
 });
 
+
 // @route   GET api/users/current
 // @desc    Return current user
 // @access  Private
 router.get('/current', passport.authenticate('jwt', { session: false }), (req, res) => {
     res.json({ msg: 'Succes' });
 });
+
 
 //////////////
 // Exports //
