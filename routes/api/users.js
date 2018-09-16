@@ -6,10 +6,16 @@ const express = require('express');
 const router = express.Router();
 const User = require('../../models/User');
 const gravatar = require('gravatar');
+
+// Security
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const keys = require('../../config/keys');
 const passport = require('passport');
+
+// Validation
+const validateRegisterInput = require('../../validation/register');
+const validateLoginInput = require('../../validation/login');
 
 ///////////////////
 // GET requests //
@@ -26,12 +32,21 @@ router.get('/test', (req, res) => {
 // @route   GET api/users/register
 // @desc    Register users route
 // @access  Public
-router.post('/register', async (req, res) => {
+router.post('/register', (req, res) => {
+    // Validate the input of the req.body
+    const { errors, isValid } = validateRegisterInput(req.body);
+
+    // Check validation
+    if (!isValid) {
+        return res.status(400).json(errors);
+    }
+
     // Find already registered email
     User.findOne({ email: req.body.email })
         .then(user => {
         if (user) {
-            return res.status(400).json({ email: 'Email already exists' });
+            errors.email = 'Email already exists';
+            return res.status(400).json(errors);
         } else {
             const avatar = gravatar.url(req.body.email, {
                 protocol: 'https', // HTTPS protocol
@@ -69,13 +84,22 @@ router.post('/register', async (req, res) => {
 // @desc    Login users route -> Returns JSON web token
 // @access  Public
 router.post('/login', (req, res) => {
+    // Validate the input of the req.body
+    const { errors, isValid } = validateLoginInput(req.body);
+
+    // Check validation
+    if (!isValid) {
+        return res.status(400).json(errors);
+    }
+
     const email = req.body.email;
     const password = req.body.password;
 
     // find user by email;
     User.findOne({ email }).then(user => {
         if(!user) {
-            return res.status(404).json({ email: 'User not found' });
+            errors.email = 'User is not found';
+            return res.status(404).json(errors);
         }
 
         // Check password
@@ -90,7 +114,8 @@ router.post('/login', (req, res) => {
                 });
 
             } else {
-                return res.status(400).json({ password: 'Password incorrect' });
+                errors.password = 'Password is incorrect';
+                return res.status(400).json(errors);
             }
         })
     })
@@ -101,7 +126,11 @@ router.post('/login', (req, res) => {
 // @desc    Return current user
 // @access  Private
 router.get('/current', passport.authenticate('jwt', { session: false }), (req, res) => {
-    res.json({ msg: 'Succes' });
+    res.json({
+        id: req.user.id,
+        name: req.user.name,
+        email: req.user.email
+    });
 });
 
 

@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/routes/api/users.js" description="// @route   GET api/users/register&#10;// @desc    Reg..." line="25" />
+    <bookmark url="file://$PROJECT_DIR$/routes/api/users.js" description="// @route   GET api/users/register&#10;// @desc    Reg..." line="31" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63b44a66-c0f0-4b49-9f00-29798cd8d194" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/validation/is-empty.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/validation/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/validation/register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/devconnector.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/devconnector.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -22,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server.js">
+      <file leaf-file-name="register.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/validation/register.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="686">
+              <caret line="48" column="22" selection-end-line="60" selection-end-column="2" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -34,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="passport.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/passport.js">
+      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/validation/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+            <state relative-caret-position="340">
+              <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -46,20 +49,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="keys.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/keys.js">
+      <file leaf-file-name="is-empty.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/validation/is-empty.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+            <state relative-caret-position="221">
+              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="users.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/api/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1683">
-              <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+            <state relative-caret-position="221">
+              <caret line="100" column="36" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -94,6 +100,9 @@
         <option value="$PROJECT_DIR$/config/keys.js" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/config/passport.js" />
+        <option value="$PROJECT_DIR$/validation/is-empty.js" />
+        <option value="$PROJECT_DIR$/validation/register.js" />
+        <option value="$PROJECT_DIR$/validation/login.js" />
         <option value="$PROJECT_DIR$/routes/api/users.js" />
       </list>
     </option>
@@ -142,16 +151,6 @@
             <path>
               <item name="MERN" type="b2602c69:ProjectViewProjectNode" />
               <item name="MERN" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MERN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MERN" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MERN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MERN" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -159,6 +158,11 @@
               <item name="MERN" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MERN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MERN" type="462c0819:PsiDirectoryNode" />
+              <item name="validation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -200,7 +204,7 @@
       <workItem from="1536931145888" duration="633000" />
       <workItem from="1536931795591" duration="2353000" />
       <workItem from="1537016877861" duration="10021000" />
-      <workItem from="1537029956032" duration="2420000" />
+      <workItem from="1537029956032" duration="6716000" />
     </task>
     <task id="LOCAL-00001" summary="Created user model&#10;-&gt; Created registration logic to users.js&#10;-&gt; Created login logic through username &amp; password&#10;-&gt; Created JSON web token&#10;-&gt; Added JWT strategy">
       <created>1537030166778</created>
@@ -209,15 +213,21 @@
       <option name="project" value="LOCAL" />
       <updated>1537030166778</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Formatted some lines in users.js">
+      <created>1537096026550</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1537096026550</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15427000" />
+    <option name="totallyTimeSpent" value="19723000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11406844" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -247,7 +257,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created user model&#10;-&gt; Created registration logic to users.js&#10;-&gt; Created login logic through username &amp; password&#10;-&gt; Created JSON web token&#10;-&gt; Added JWT strategy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created user model&#10;-&gt; Created registration logic to users.js&#10;-&gt; Created login logic through username &amp; password&#10;-&gt; Created JSON web token&#10;-&gt; Added JWT strategy" />
+    <MESSAGE value="Formatted some lines in users.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Formatted some lines in users.js" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/server.js">
@@ -422,13 +433,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/keys.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -439,20 +443,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api/users.js">
+    <entry file="file://$PROJECT_DIR$/config/passport.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1683">
-          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+        <state relative-caret-position="561">
+          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/passport.js">
+    <entry file="file://$PROJECT_DIR$/config/keys.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+        <state relative-caret-position="34">
+          <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/validation/is-empty.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/validation/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="686">
+          <caret line="48" column="22" selection-end-line="60" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/validation/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="100" column="36" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

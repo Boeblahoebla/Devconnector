@@ -19,5 +19,6 @@
     <orderEntry type="library" name="@types/jsonwebtoken" level="application" />
     <orderEntry type="library" name="@types/gravatar" level="application" />
     <orderEntry type="library" name="@types/bcrypt" level="application" />
+    <orderEntry type="library" name="@types/validator" level="application" />
   </component>
 </module>
