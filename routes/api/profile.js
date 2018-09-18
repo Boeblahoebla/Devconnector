@@ -246,6 +246,28 @@ router.post('/education', passport.authenticate('jwt', { session: false }), (req
     });
 });
 
+
+// @route   DELETE api/profile/experience/
+// @desc    Delete experience from profile
+// @access  Private
+router.delete('/experience/:exp_id', passport.authenticate('jwt', { session: false }), (req, res) => {
+    // Find the profile in question
+    Profile.findOne({ user: req.user.id })
+    .then(profile => {
+        // Search the index to remove by mapping the _id fields
+        // from the array of sub documents to an own array of _id fields and
+        // Finding the index of the req.params.exp_id
+        const removeIndex = profile.experience.map(item => item._id).indexOf(req.params.exp_id);
+
+        // Remove at the found index
+        profile.experience.splice(removeIndex, 1);
+
+        // Save the profile
+        profile.save().then(profile => res.json(profile));
+    })
+    .catch(err => res.status(404).json(err));
+});
+
 //////////////
 // Exports //
 ////////////
