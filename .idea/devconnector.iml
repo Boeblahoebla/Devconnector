@@ -13,12 +13,8 @@
     <orderEntry type="library" name="@types/react" level="application" />
     <orderEntry type="library" name="@types/mongoose" level="application" />
     <orderEntry type="library" name="@types/joi" level="application" />
-    <orderEntry type="library" name="@types/webpack" level="application" />
-    <orderEntry type="library" name="@types/webpack-env" level="application" />
     <orderEntry type="library" name="@types/passport" level="application" />
     <orderEntry type="library" name="@types/jsonwebtoken" level="application" />
-    <orderEntry type="library" name="@types/gravatar" level="application" />
-    <orderEntry type="library" name="@types/bcrypt" level="application" />
     <orderEntry type="library" name="@types/validator" level="application" />
   </component>
 </module>

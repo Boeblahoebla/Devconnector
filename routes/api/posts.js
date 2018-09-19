@@ -85,7 +85,7 @@ router.delete('/:id', passport.authenticate('jwt', { session: false }), (req, re
                     }
 
                     // Delete the post
-                    post.remove().then(() => res.json({ deleted: 'succes' }));
+                    post.remove().then(() => res.json({ deleted: 'success' }));
                 })
                 .catch(err => res.json(err));
         })
