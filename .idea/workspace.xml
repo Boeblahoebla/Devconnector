@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63b44a66-c0f0-4b49-9f00-29798cd8d194" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/validation/post.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/posts.js" afterDir="false" />
     </list>
@@ -36,8 +35,8 @@
       <file leaf-file-name="posts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/api/posts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+            <state relative-caret-position="460">
+              <caret line="139" column="87" selection-start-line="139" selection-start-column="87" selection-end-line="139" selection-end-column="87" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -429,11 +428,25 @@
       <option name="project" value="LOCAL" />
       <updated>1537344033598</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added a route to create a post&#10;-&gt; POST post at /api/posts/&#10;tested with postman">
+      <created>1537345771453</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1537345771453</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added a route to delete a post&#10;-&gt; DELETE post at /api/posts/:id&#10;tested with postman">
+      <created>1537346949847</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1537346949847</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41652000" />
+    <option name="totallyTimeSpent" value="43815000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1288" y="-8" width="1296" height="1000" extended-state="6" />
@@ -509,7 +522,9 @@
     <MESSAGE value="Added routes to delete an experience and education from the profile&#10;-&gt; Delete experience on /api/profile/experience/:exp_id&#10;-&gt; Delete education on /api/profile/education/:exp_id" />
     <MESSAGE value="Added routes to delete a profile and user&#10;-&gt; Delete profile &amp; user on /api/profile&#10;Tested on Postman" />
     <MESSAGE value="Added the Schema for the forum Posts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the Schema for the forum Posts" />
+    <MESSAGE value="Added a route to create a post&#10;-&gt; POST post at /api/posts/&#10;tested with postman" />
+    <MESSAGE value="Added a route to delete a post&#10;-&gt; DELETE post at /api/posts/:id&#10;tested with postman" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a route to delete a post&#10;-&gt; DELETE post at /api/posts/:id&#10;tested with postman" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -917,8 +932,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/api/posts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+        <state relative-caret-position="460">
+          <caret line="139" column="87" selection-start-line="139" selection-start-column="87" selection-end-line="139" selection-end-column="87" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
