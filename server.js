@@ -10,6 +10,7 @@ const profileRoute = require('./routes/api/profile');
 const postsRoute = require('./routes/api/posts');
 const bodyParser = require('body-parser');
 const passport = require('passport');
+const morgan = require('morgan');
 
 const app = express();
 
@@ -29,6 +30,9 @@ mongoose.connect(db, { useNewUrlParser: true })
 // forms & parsing
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
+
+// Logging
+app.use(morgan('tiny'));
 
 // Authentication & Passport Config (strategy)
 app.use(passport.initialize());
