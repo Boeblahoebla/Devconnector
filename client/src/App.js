@@ -4,12 +4,18 @@
 
 // Dependencies
 import React, { Component } from 'react';
-import './App.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 // Components
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Landing from './components/layout/Landing';
+import Register from './components/auth/Register';
+import Login from './components/auth/Login';
+
+// Styling
+import './App.css';
+
 
 /////////////////
 // Components //
@@ -18,11 +24,19 @@ import Landing from './components/layout/Landing';
 class App extends Component {
     render() {
         return (
-            <div className="App">
-                <Navbar/>
-                <Landing/>
-                <Footer/>
-            </div>
+            <Router>
+                <div className="App">
+                    <Navbar />
+                    <Route exact path="/" component={ Landing } />
+
+                    <div className="container">
+                        <Route exact path="/register" component={ Register } />
+                        <Route exact path="/login" component={ Login } />
+                    </div>
+
+                    <Footer />
+                </div>
+            </Router>
         );
     }
 }
