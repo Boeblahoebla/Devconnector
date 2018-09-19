@@ -247,20 +247,27 @@ router.post('/education', passport.authenticate('jwt', { session: false }), (req
 });
 
 
-// @route   DELETE api/profile/experience/
+// @route   DELETE api/profile/experience/:exp_id
 // @desc    Delete experience from profile
 // @access  Private
 router.delete('/experience/:exp_id', passport.authenticate('jwt', { session: false }), (req, res) => {
+    const errors = {};
+
     // Find the profile in question
     Profile.findOne({ user: req.user.id })
     .then(profile => {
         // Search the index to remove by mapping the _id fields
         // from the array of sub documents to an own array of _id fields and
         // Finding the index of the req.params.exp_id
-        const removeIndex = profile.experience.map(item => item._id).indexOf(req.params.exp_id);
+        const removeIndex = profile.experience.map(item => item.id).indexOf(req.params.exp_id);
 
-        // Remove at found index
-        profile.experience.splice(removeIndex, 1);
+        if (removeIndex > -1) {
+            // Remove at found index
+            profile.experience.splice(removeIndex, 1);
+        } else {
+            errors.noexperience = "There is no experience by that index";
+            return res.status(404).json(errors);
+        }
 
         // Save the profile
         profile.save().then(profile => res.json(profile));
@@ -269,26 +276,48 @@ router.delete('/experience/:exp_id', passport.authenticate('jwt', { session: fal
 });
 
 
-// @route   DELETE api/profile/education/
+// @route   DELETE api/profile/education/:edu_id
 // @desc    Delete education from profile
 // @access  Private
-router.delete('/education/:exp_id', passport.authenticate('jwt', { session: false }), (req, res) => {
+router.delete('/education/:edu_id', passport.authenticate('jwt', { session: false }), (req, res) => {
+    const errors = {};
+
     // Find the profile in question
     Profile.findOne({ user: req.user.id })
     .then(profile => {
         // Search the index to remove by mapping the _id fields
         // from the array of sub documents to an own array of _id fields and
         // Finding the index of the req.params.exp_id
-        const removeIndex = profile.education.map(item => item._id).indexOf(req.params.exp_id);
+        const removeIndex = profile.education.map(item => item.id).indexOf(req.params.edu_id);
 
-        // Remove at found index
-        profile.education.splice(removeIndex, 1);
+        if (removeIndex > -1) {
+            // Remove at found index
+            profile.education.splice(removeIndex, 1);
+        } else {
+            errors.noeducation = "There is no education by that index";
+            return res.status(404).json(errors);
+        }
 
         // Save the profile
         profile.save().then(profile => res.json(profile));
     })
     .catch(err => res.status(404).json(err));
 });
+
+
+// @route   DELETE api/profile
+// @desc    Delete user and profile
+// @access  Private
+router.delete('/', passport.authenticate('jwt', { session: false }), (req, res) => {
+    // Find the profile in question
+    Profile.findOneAndRemove({ user: req.user.id })
+    .then(() => {
+        User.findOneAndRemove({ _id: req.user.id })
+            .then(() => res.status(200).send('User deleted'))
+            .catch(err => res.status(400).send(err));
+    });
+});
+
 
 //////////////
 // Exports //

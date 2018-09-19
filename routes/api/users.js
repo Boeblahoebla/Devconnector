@@ -80,7 +80,7 @@ router.post('/register', (req, res) => {
 });
 
 
-// @route   GET api/users/login
+// @route   POST api/users/login
 // @desc    Login users route -> Returns JSON web token
 // @access  Public
 router.post('/login', (req, res) => {
