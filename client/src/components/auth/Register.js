@@ -76,7 +76,7 @@ class Register extends Component {
                             <p className="lead text-center">Create your DevConnector account</p>
 
                             {/* On submit, fire up the onSubmit method */}
-                            <form onSubmit={ this.onSubmit }>
+                            <form noValidate onSubmit={ this.onSubmit }>
                                 <div className="form-group">
 
                                     {/* CSS classnames use the classnames npm package */}
