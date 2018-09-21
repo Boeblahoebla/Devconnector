@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{@types/express, @types/joi, @types/jsonwebtoken, @types/mongoose, @types/node, @types/passport, @types/react, @types/validator}" />
+    <file url="PROJECT" libraries="{@types/angular, @types/bcrypt, @types/bcryptjs, @types/body-parser, @types/classnames, @types/express, @types/gravatar, @types/joi, @types/jsonwebtoken, @types/mongoose, @types/morgan, @types/node, @types/passport, @types/passport-jwt, @types/prop-types, @types/react, @types/react-redux, @types/validator}" />
   </component>
 </project>

@@ -3,8 +3,11 @@
 ////////////
 
 import React, {Component} from 'react';
+import PropTypes from 'prop-types'
 import axios from 'axios';
 import classnames from 'classnames';
+import { connect } from 'react-redux';
+import { registerUserAction } from "../../actions/authActions";
 
 ////////////////
 // Component //
@@ -44,12 +47,14 @@ class Register extends Component {
             password2: this.state.password2
         };
 
+        this.props.registerUserAction(newUser);
+
         // interact with the backend through axios
         // issue a post request to REST endpoint with the new user which gives a promise having a result.
-        axios.post('/api/users/register', newUser)
-            .then(res => console.log(res.data))
-            // If errors, set the errors object in the state to the object given by err.response.data
-            .catch(err => this.setState({ errors: err.response.data }));
+        //axios.post('/api/users/register', newUser)
+        //    .then(res => console.log(res.data))
+        //    // If errors, set the errors object in the state to the object given by err.response.data
+        //    .catch(err => this.setState({ errors: err.response.data }));
     };
 
     // Set the values of the form inputs to the state attributes
@@ -65,7 +70,6 @@ class Register extends Component {
 
         // Bootstrap: http://getbootstrap.com/docs/4.1/components/forms/#validation
         // Classnames: https://github.com/JedWatson/classnames#readme
-
 
         return (
             <div className="register">
@@ -164,8 +168,23 @@ class Register extends Component {
     }
 }
 
+/////////////////////
+// Helper methods //
+///////////////////
+
+// Set the prop types for this component
+Register.propTypes = {
+    registerUser: PropTypes.func.isRequired,
+    auth: PropTypes.object.isRequired,
+};
+
+// add the state(s) as a prop
+const mapStateToProps = (state) => ({
+    auth: state.auth
+});
+
 //////////////
 // Exports //
 ////////////
 
-export default Register;
+export default connect(mapStateToProps, { registerUserAction })(Register);

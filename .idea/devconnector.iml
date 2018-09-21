@@ -16,5 +16,15 @@
     <orderEntry type="library" name="@types/passport" level="application" />
     <orderEntry type="library" name="@types/jsonwebtoken" level="application" />
     <orderEntry type="library" name="@types/validator" level="application" />
+    <orderEntry type="library" name="@types/angular" level="application" />
+    <orderEntry type="library" name="@types/react-redux" level="application" />
+    <orderEntry type="library" name="@types/classnames" level="application" />
+    <orderEntry type="library" name="@types/bcrypt" level="application" />
+    <orderEntry type="library" name="@types/bcryptjs" level="application" />
+    <orderEntry type="library" name="@types/gravatar" level="application" />
+    <orderEntry type="library" name="@types/passport-jwt" level="application" />
+    <orderEntry type="library" name="@types/body-parser" level="application" />
+    <orderEntry type="library" name="@types/morgan" level="application" />
+    <orderEntry type="library" name="@types/prop-types" level="application" />
   </component>
 </module>

@@ -11,7 +11,7 @@ import rootReducer from './reducers';
 ////////////////////
 
 // initialState variable
-const initialState = {};
+const initialRootState = {};
 
 // Assign the Redux middleware
 const middleware = [thunk];
@@ -19,7 +19,7 @@ const middleware = [thunk];
 // Create the Redux store for our states
 const store = createStore(
     rootReducer,
-    initialState,
+    initialRootState,
     compose(
         applyMiddleware(...middleware),
         window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
@@ -27,7 +27,7 @@ const store = createStore(
 );
 
 //////////////
-// Imports //
+// Exports //
 ////////////
 
 export default store;
