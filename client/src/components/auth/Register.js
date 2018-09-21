@@ -4,7 +4,7 @@
 
 import React, {Component} from 'react';
 import PropTypes from 'prop-types'
-import axios from 'axios';
+import { withRouter } from 'react-router-dom';
 import classnames from 'classnames';
 import { connect } from 'react-redux';
 import { registerUserAction } from "../../actions/authActions";
@@ -23,6 +23,14 @@ class Register extends Component {
             password: '',
             password2: '',
             errors: {}
+        }
+    }
+
+    // When the component receives new props, check to see if there are errors
+    // if there are errors, add the errors to the component state
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.errors) {
+            this.setState({ errors: nextProps.errors })
         }
     }
 
@@ -47,14 +55,10 @@ class Register extends Component {
             password2: this.state.password2
         };
 
-        this.props.registerUserAction(newUser);
+        // Trigger the registerUserAction as a prop with the data in the newUser object
+        // this.props.history allows redirection from within the action
+        this.props.registerUserAction(newUser, this.props.history);
 
-        // interact with the backend through axios
-        // issue a post request to REST endpoint with the new user which gives a promise having a result.
-        //axios.post('/api/users/register', newUser)
-        //    .then(res => console.log(res.data))
-        //    // If errors, set the errors object in the state to the object given by err.response.data
-        //    .catch(err => this.setState({ errors: err.response.data }));
     };
 
     // Set the values of the form inputs to the state attributes
@@ -174,17 +178,19 @@ class Register extends Component {
 
 // Set the prop types for this component
 Register.propTypes = {
-    registerUser: PropTypes.func.isRequired,
+    registerUserAction: PropTypes.func.isRequired,
     auth: PropTypes.object.isRequired,
+    errors: PropTypes.object.isRequired
 };
 
 // add the state(s) as a prop
 const mapStateToProps = (state) => ({
-    auth: state.auth
+    auth: state.auth,
+    errors: state.errors
 });
 
 //////////////
 // Exports //
 ////////////
 
-export default connect(mapStateToProps, { registerUserAction })(Register);
+export default connect(mapStateToProps, { registerUserAction })(withRouter(Register));
