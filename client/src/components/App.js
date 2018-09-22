@@ -7,19 +7,19 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 // Components
-import Navbar from './components/layout/Navbar';
-import Footer from './components/layout/Footer';
-import Landing from './components/layout/Landing';
+import Navbar from './layout/Navbar';
+import Footer from './layout/Footer';
+import Landing from './layout/Landing';
 
-import Register from './components/auth/Register';
-import Login from './components/auth/Login';
+import Register from './auth/Register';
+import Login from './auth/Login';
 
 // Redux
 import { Provider } from 'react-redux';
-import fullApplicationState from './redux/store';
+import fullApplicationState from '../redux/store';
 
 // Styling
-import './styles/App.css';
+import '../styles/App.css';
 
 /////////////////
 // Components //

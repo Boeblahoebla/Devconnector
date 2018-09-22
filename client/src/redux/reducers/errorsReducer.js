@@ -1,3 +1,7 @@
+//////////////
+// Imports //
+////////////
+
 import { GET_ERRORS } from '../actions/types';
 
 // Create the initial state

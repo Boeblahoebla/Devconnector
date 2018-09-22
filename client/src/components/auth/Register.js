@@ -26,8 +26,9 @@ class Register extends Component {
         }
     }
 
-    // When the component receives new props, check to see if there are errors
-    // if there are errors, add the errors to the component state
+    // Lifecycle method of React for when the component receives new props,
+    // Check to see if there are errors. If there are errors,
+    // add the errors to the component state
     componentWillReceiveProps(nextProps) {
         if (nextProps.errors) {
             this.setState({ errors: nextProps.errors })
@@ -57,8 +58,8 @@ class Register extends Component {
 
         // Trigger the registerUserAction as a prop with the data in the newUser object
         // this.props.history allows redirection from within the action
+        // because of the withRouter argument at the bottom of this file
         this.props.registerUserAction(newUser, this.props.history);
-
     };
 
     // Set the values of the form inputs to the state attributes
