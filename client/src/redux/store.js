@@ -2,9 +2,14 @@
 // Imports //
 ////////////
 
+// Redux dependencies
 import { createStore, applyMiddleware, compose } from 'redux';
+
+// Redux middleware
 import thunk from 'redux-thunk';
-import rootReducer from './reducers';
+
+// The All the reducers
+import allReducers from './reducers/index';
 
 //////////////////////
 // Store for Redux //
@@ -16,9 +21,9 @@ const initialRootState = {};
 // Assign the Redux middleware
 const middleware = [thunk];
 
-// Create the Redux store for our states
+// Create the Redux store to use in our full App
 const store = createStore(
-    rootReducer,
+    allReducers,
     initialRootState,
     compose(
         applyMiddleware(...middleware),

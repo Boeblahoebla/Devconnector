@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'
 import { withRouter } from 'react-router-dom';
 import classnames from 'classnames';
 import { connect } from 'react-redux';
-import { registerUserAction } from "../../actions/authActions";
+import { registerUserAction } from "../../redux/actions/authActions";
 
 ////////////////
 // Component //
@@ -68,7 +68,7 @@ class Register extends Component {
         const { errors } = this.state;
 
         // the classnames of the inputfields now use the npm package classnames
-        // css className has "form-control and form-control-lg always active" by the 1st argument between ' '
+        // css className has "form-control and form-control-lg" always active by the 1st argument between ' '
         // and an optional when the input is not valid as the second argument ' ' which is set to the errors
         // we get through the server side validation in express & validator
 
@@ -185,6 +185,9 @@ Register.propTypes = {
 
 // add the state(s) as a prop
 const mapStateToProps = (state) => ({
+    // Everything after the ':'
+    // comes from the reducers listed in the combineReducers method
+    // in the file ./client/src/redux/reducers/index.js
     auth: state.auth,
     errors: state.errors
 });

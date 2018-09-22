@@ -2,7 +2,10 @@
 // Imports //
 ////////////
 
+// Action types
 import { GET_ERRORS } from "./types";
+
+// Async functionality to REST endpoints
 import axios from 'axios';
 
 //////////////

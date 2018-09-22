@@ -1,5 +1,3 @@
-
-
 // Create the initial state
 const initialAuthState = {
     isAuthenticated: false,

@@ -16,10 +16,10 @@ import Login from './components/auth/Login';
 
 // Redux
 import { Provider } from 'react-redux';
-import store from './store';
+import fullApplicationState from './redux/store';
 
 // Styling
-import './App.css';
+import './styles/App.css';
 
 /////////////////
 // Components //
@@ -30,7 +30,7 @@ class App extends Component {
         return (
             // everything inside the Provider tag has access to the
             // Application state- storage of Redux
-            <Provider store={ store } >
+            <Provider store={ fullApplicationState } >
                 <Router>
                     <div className="App">
                         <Navbar />
