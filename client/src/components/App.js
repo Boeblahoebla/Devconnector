@@ -21,6 +21,7 @@ import fullApplicationStore from '../redux/store';
 import jwt_decode from 'jwt-decode';
 import setAuthToken from '../utils/setAuthToken';
 import { setCurrentUser } from "../redux/actions/authActions";
+import { logOutUserAction } from "../redux/actions/authActions";
 
 // Styling
 import '../styles/App.css';
@@ -37,6 +38,18 @@ if (localStorage.jwtToken) {
     const decoded = jwt_decode(localStorage.jwtToken);
     // Set user and isAuthenticated
     fullApplicationStore.dispatch(setCurrentUser(decoded));
+
+    // Check for expired token
+    const currentTime = Date.now() / 1000;
+    if (decoded.exp < currentTime) {
+        // Logout the user
+        fullApplicationStore.dispatch(logOutUserAction);
+
+        // Clear the current profile
+        // TODO: Clear the profile
+        // TODO: Redirect to login
+        window.location.href = '/login';
+    }
 }
 
 class App extends Component {

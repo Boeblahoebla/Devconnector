@@ -31,6 +31,15 @@ class Register extends Component {
         }
     }
 
+    // Lifecycle method to check for an authenticated user
+    // when the component has mounted. If authenticated
+    // just redirect to the dashboard
+    componentDidMount(){
+        if (this.props.auth.isAuthenticated) {
+            this.props.history.push('/dashboard');
+        }
+    }
+
     // Lifecycle method of React for when the component receives new props,
     // Check to see if there are errors. If there are errors,
     // add the errors to the component state

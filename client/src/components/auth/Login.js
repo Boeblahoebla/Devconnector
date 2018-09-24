@@ -28,6 +28,15 @@ class Login extends Component {
         };
     }
 
+    // Lifecycle method to check for an authenticated user
+    // when the component has mounted. If authenticated
+    // just redirect to the dashboard
+    componentDidMount(){
+        if (this.props.auth.isAuthenticated) {
+            this.props.history.push('/dashboard');
+        }
+    }
+
     // Lifecycle method of React for when the component receives new props,
     // Checks for errors and isAuthenticated
     componentWillReceiveProps(nextProps) {

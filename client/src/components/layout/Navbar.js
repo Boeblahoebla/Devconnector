@@ -5,12 +5,61 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+
+import { logOutUserAction } from "../../redux/actions/authActions";
+
 ////////////////
 // Component //
 //////////////
 
-class MyComponent extends Component {
+class NavBar extends Component {
+
+    onLogoutClick = (e) => {
+        e.preventDefault();
+        this.props.logOutUserAction();
+    };
+
     render() {
+        const { isAuthenticated, user } = this.props.auth;
+
+        const authLinks = (
+            <ul className="navbar-nav ml-auto">
+                <li className="nav-item">
+                    <a className="nav-link" href="feed.html">
+                        Post Feed
+                    </a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="dashboard.html">
+                        Dashboard
+                    </a>
+                </li>
+                <li className="nav-item">
+
+                    <a
+                        href=""
+                        onClick={this.onLogoutClick}
+                        className="nav-link">
+                        <img className="rounded-circle" src={ user.avatar } alt={ user.name } style={{ width: '25px', marginRight: '5px'}} title="You must have a Gravatar connected to your email to display an image" />
+                        {' '}Logout
+                    </a>
+                </li>
+            </ul>
+        );
+
+        const guestLinks = (
+            <ul className="navbar-nav ml-auto">
+                <li className="nav-item">
+                    <Link className="nav-link" to="/register">Sign Up</Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="/login">Login</Link>
+                </li>
+            </ul>
+        );
+
         return (
             <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
                 <div className="container">
@@ -26,14 +75,8 @@ class MyComponent extends Component {
                             </li>
                         </ul>
 
-                        <ul className="navbar-nav ml-auto">
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/register">Sign Up</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/login">Login</Link>
-                            </li>
-                        </ul>
+                        { isAuthenticated ? authLinks : guestLinks }
+
                     </div>
                 </div>
             </nav>
@@ -45,4 +88,18 @@ class MyComponent extends Component {
 // Exports //
 ////////////
 
-export default MyComponent;
+// Set the prop types for this component
+NavBar.propTypes = {
+    logOutUserAction: PropTypes.func.isRequired,
+    auth: PropTypes.object.isRequired
+};
+
+// add the state(s) as a prop
+const mapStateToProps = (state) => ({
+    // Everything after the ':'
+    // comes from the reducers listed in the combineReducers method
+    // in the file ./client/src/redux/reducers/index.js
+    auth: state.auth
+});
+
+export default connect(mapStateToProps,{ logOutUserAction })(NavBar);
