@@ -2,6 +2,7 @@
   <dictionary name="DTPAdmin">
     <words>
       <w>classnames</w>
+      <w>redux</w>
     </words>
   </dictionary>
 </component>
