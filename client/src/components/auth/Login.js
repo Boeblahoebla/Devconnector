@@ -5,7 +5,9 @@
 // React
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
+
+// Components
+import TextFieldGroup from '../common/TextFieldGroup';
 
 // Redux dependency
 import { connect } from 'react-redux';
@@ -98,40 +100,22 @@ class Login extends Component {
 
                             {/* On submit, fire up the onSubmit method*/}
                             <form onSubmit={this.onSubmit}>
-                                <div className="form-group">
+                                <TextFieldGroup
+                                    name="email"
+                                    type="email"
+                                    placeholder="Email address"
+                                    value={this.state.email}
+                                    onChange={this.onChange}
+                                    error={errors.email} />
 
-                                    {/* CSS classnames use the classnames npm package */}
-                                    <input
-                                        type="email"
-                                        className={classnames('form-control form-control-lg', {
-                                            'is-invalid': errors.email
-                                        })}
-                                        placeholder="Email Address"
-                                        name="email"
-                                        value={this.state.email}
-                                        onChange={this.onChange}
-                                    />
+                                <TextFieldGroup
+                                    name="password"
+                                    type="password"
+                                    placeholder="Password"
+                                    value={this.state.password}
+                                    onChange={this.onChange}
+                                    error={errors.password} />
 
-                                    {/* provide the error messages under the input that is not validated */}
-                                    {errors.email && (<div className="invalid-feedback">{errors.email}</div>)}
-                                </div>
-                                <div className="form-group">
-
-                                    {/* CSS classnames use the classnames npm package */}
-                                    <input
-                                        type="password"
-                                        className={classnames('form-control form-control-lg', {
-                                            'is-invalid': errors.password
-                                        })}
-                                        placeholder="Password"
-                                        name="password"
-                                        value={this.state.password}
-                                        onChange={this.onChange}
-                                    />
-
-                                    {/* provide the error messages under the input that is not validated */}
-                                    {errors.password && (<div className="invalid-feedback">{errors.password}</div>)}
-                                </div>
                                 <input type="submit" className="btn btn-info btn-block mt-4" />
                             </form>
                         </div>
