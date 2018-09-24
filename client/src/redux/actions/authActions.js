@@ -29,28 +29,23 @@ export const registerUserAction = (userData, history) => dispatch => {
         );
 };
 
-// Login User Action
-export const loginUserAction = (userData) => dispatch => {
+// Login - Get User Token
+export const loginUserAction = userData => dispatch => {
     axios
-        .post('/api/user/login', userData)
+        .post('/api/users/login', userData)
         .then(res => {
-            // Save the JWT to localstorage
+            // Save to localStorage
             const { token } = res.data;
-            // Set token to localstorage
+            // Set token to ls
             localStorage.setItem('jwtToken', token);
             // Set token to Auth header
             setAuthToken(token);
-            // Extract the user from the data contained in the token
+            // Decode token to get user data
             const decoded = jwt_decode(token);
-            // Set the current user
+            // Set current user
             dispatch(setCurrentUser(decoded));
         })
-        .catch(err =>
-            dispatch({
-                type: GET_ERRORS,
-                payload: err.response.data
-            })
-        );
+
 };
 
 /////////////////////

@@ -2,9 +2,16 @@
 // Imports //
 ////////////
 
-import React, {Component} from 'react';
-import axios from 'axios';
+// React
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import classnames from 'classnames';
+
+// Redux dependency
+import { connect } from 'react-redux';
+
+// Redux actions
+import { loginUserAction } from '../../redux/actions/authActions';
 
 ////////////////
 // Component //
@@ -18,33 +25,44 @@ class Login extends Component {
             email: '',
             password: '',
             errors: {}
-        }
+        };
     }
 
-    // Method which is called when the user types in one of the fields
-    // e.target.name points to the name that is given to the input field in the JSX below
-    // e.target.value points to the current value typed in each of the text fields
-    onChange = (e) => {
-        this.setState({[e.target.name]: e.target.value});
-    };
+    // Lifecycle method of React for when the component receives new props,
+    // Checks for errors and isAuthenticated
+    componentWillReceiveProps(nextProps) {
+        // If authenticated redirect to the dashboard
+        if (nextProps.auth.isAuthenticated) {
+            this.props.history.push('/dashboard');
+        }
+
+        // if errors as prop, update the errors object in the state
+        if (nextProps.errors) {
+            this.setState({ errors: nextProps.errors });
+        }
+    }
 
     // Method which get called when the user submits the typed in values
     // when clicking on the submit button
     // This is made available by the onSubmit={ this.onSubmit } attribute in the form tag below
     onSubmit = (e) => {
         e.preventDefault();
-
         // Create a user object having the values read from the filled in state
-        const newLogin = {
+        const userData = {
             email: this.state.email,
             password: this.state.password
         };
 
         // interact with the backend through axios
-        // issue a post request to REST endpoint with the new user which gives a promise having a result.
-        axios.post('/api/users/login', newLogin)
-            .then(res => console.log(res.data))
-            .catch(err => this.setState({ errors: err.response.data }));
+        // issue a post request to REST endpoint through the loginUserAction in Redux
+        this.props.loginUserAction(userData);
+    };
+
+    // Method which is called when the user types in one of the fields
+    // e.target.name points to the name that is given to the input field in the JSX below
+    // e.target.value points to the current value typed in each of the text fields
+    onChange = (e) => {
+        this.setState({ [e.target.name]: e.target.value });
     };
 
     render() {
@@ -65,49 +83,47 @@ class Login extends Component {
                     <div className="row">
                         <div className="col-md-8 m-auto">
                             <h1 className="display-4 text-center">Log In</h1>
-                            <p className="lead text-center">Sign in to your DevConnector account</p>
+                            <p className="lead text-center">
+                                Sign in to your DevConnector account
+                            </p>
 
                             {/* On submit, fire up the onSubmit method*/}
-                            <form onSubmit={ this.onSubmit }>
+                            <form onSubmit={this.onSubmit}>
                                 <div className="form-group">
 
                                     {/* CSS classnames use the classnames npm package */}
                                     <input
+                                        type="email"
                                         className={classnames('form-control form-control-lg', {
                                             'is-invalid': errors.email
                                         })}
-
-                                        type="email"
                                         placeholder="Email Address"
                                         name="email"
-                                        value={ this.state.email }
-                                        onChange={ this.onChange }
+                                        value={this.state.email}
+                                        onChange={this.onChange}
                                     />
 
                                     {/* provide the error messages under the input that is not validated */}
                                     {errors.email && (<div className="invalid-feedback">{errors.email}</div>)}
-
                                 </div>
                                 <div className="form-group">
 
                                     {/* CSS classnames use the classnames npm package */}
                                     <input
+                                        type="password"
                                         className={classnames('form-control form-control-lg', {
                                             'is-invalid': errors.password
                                         })}
-
-                                        type="password"
                                         placeholder="Password"
                                         name="password"
-                                        value={ this.state.password }
-                                        onChange={ this.onChange }
+                                        value={this.state.password}
+                                        onChange={this.onChange}
                                     />
 
                                     {/* provide the error messages under the input that is not validated */}
                                     {errors.password && (<div className="invalid-feedback">{errors.password}</div>)}
-
                                 </div>
-                                <input type="submit" className="btn btn-info btn-block mt-4"/>
+                                <input type="submit" className="btn btn-info btn-block mt-4" />
                             </form>
                         </div>
                     </div>
@@ -117,8 +133,28 @@ class Login extends Component {
     }
 }
 
+/////////////////////
+// Helper methods //
+///////////////////
+
+// Set the prop types for this component
+Login.propTypes = {
+    loginUserAction: PropTypes.func.isRequired,
+    auth: PropTypes.object.isRequired,
+    errors: PropTypes.object.isRequired
+};
+
+// add the state(s) as a prop
+const mapStateToProps = state => ({
+    // Everything after the ':'
+    // comes from the reducers listed in the combineReducers method
+    // in the file ./client/src/redux/reducers/index.js
+    auth: state.auth,
+    errors: state.errors
+});
+
 //////////////
 // Exports //
 ////////////
 
-export default Login;
+export default connect(mapStateToProps, { loginUserAction })(Login);

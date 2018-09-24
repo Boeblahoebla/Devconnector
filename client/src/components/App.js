@@ -16,7 +16,11 @@ import Login from './auth/Login';
 
 // Redux
 import { Provider } from 'react-redux';
-import fullApplicationState from '../redux/store';
+import fullApplicationStore from '../redux/store';
+
+import jwt_decode from 'jwt-decode';
+import setAuthToken from '../utils/setAuthToken';
+import { setCurrentUser } from "../redux/actions/authActions";
 
 // Styling
 import '../styles/App.css';
@@ -25,12 +29,22 @@ import '../styles/App.css';
 // Components //
 ///////////////
 
+// Check for token if page loads
+if (localStorage.jwtToken) {
+    // Set the authToken header auth
+    setAuthToken(localStorage.jwtToken);
+    // Decode token & get user info + expiration
+    const decoded = jwt_decode(localStorage.jwtToken);
+    // Set user and isAuthenticated
+    fullApplicationStore.dispatch(setCurrentUser(decoded));
+}
+
 class App extends Component {
     render() {
         return (
             // everything inside the Provider tag has access to the
             // Application state- storage of Redux
-            <Provider store={ fullApplicationState } >
+            <Provider store={ fullApplicationStore } >
                 <Router>
                     <div className="App">
                         <Navbar />

@@ -2,11 +2,16 @@
 // Imports //
 ////////////
 
+// React
 import React, {Component} from 'react';
 import PropTypes from 'prop-types'
 import { withRouter } from 'react-router-dom';
 import classnames from 'classnames';
+
+// Redux dependency
 import { connect } from 'react-redux';
+
+// Redux actions
 import { registerUserAction } from "../../redux/actions/authActions";
 
 ////////////////

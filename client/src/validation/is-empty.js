@@ -10,7 +10,7 @@ function isEmpty(value) {
         return true;
     } else {
         return false;
-    };
+    }
 }
 
 export default isEmpty;
