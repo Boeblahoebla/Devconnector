@@ -6,7 +6,9 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types'
 import { withRouter } from 'react-router-dom';
-import classnames from 'classnames';
+
+// Components
+import TextFieldGroup from '../common/TextFieldGroup';
 
 // Redux dependency
 import { connect } from 'react-redux';
@@ -100,83 +102,40 @@ class Register extends Component {
 
                             {/* On submit, fire up the onSubmit method */}
                             <form noValidate onSubmit={ this.onSubmit }>
-                                <div className="form-group">
 
-                                    {/* CSS classnames use the classnames npm package */}
-                                    <input
-                                        className={classnames('form-control form-control-lg', {
-                                            'is-invalid': errors.name
-                                        })}
+                                {/* Input textfields using the TextFieldGroup component */}
+                                <TextFieldGroup
+                                    name="name"
+                                    placeholder="Name"
+                                    type="text"
+                                    value={ this.state.name }
+                                    onChange={ this.onChange }
+                                    error={ errors.name } />
 
-                                        type="text"
-                                        placeholder="Name"
-                                        name="name"
-                                        value={ this.state.name }
-                                        onChange={ this.onChange }
-                                    />
+                                <TextFieldGroup
+                                    name="email"
+                                    placeholder="Email address"
+                                    type="email"
+                                    value={ this.state.email }
+                                    onChange={ this.onChange }
+                                    error={ errors.email } />
 
-                                    {/* provide the error messages under the input that is not validated */}
-                                    {errors.name && (<div className="invalid-feedback">{errors.name}</div>)}
-                                </div>
-                                <div className="form-group">
+                                <TextFieldGroup
+                                    name="password"
+                                    placeholder="Password"
+                                    type="password"
+                                    value={ this.state.password }
+                                    onChange={ this.onChange }
+                                    error={ errors.password } />
 
-                                    {/* CSS classnames use the classnames npm package */}
-                                    <input
-                                        className={classnames('form-control form-control-lg', {
-                                            'is-invalid': errors.email
-                                        })}
+                                <TextFieldGroup
+                                    name="password2"
+                                    placeholder="Confirm password"
+                                    type="password"
+                                    value={ this.state.password2 }
+                                    onChange={ this.onChange }
+                                    error={ errors.password2 } />
 
-                                        type="email"
-                                        placeholder="Email Address"
-                                        name="email"
-                                        value={ this.state.email }
-                                        onChange={ this.onChange }
-                                    />
-                                    <small className="form-text text-muted">This site uses Gravatar so if you want a
-                                        profile image, use a Gravatar email
-                                    </small>
-
-                                    {/* provide the error messages under the input that is not validated */}
-                                    {errors.email && (<div className="invalid-feedback">{errors.email}</div>)}
-
-                                </div>
-                                <div className="form-group">
-
-                                    {/* CSS classnames use the classnames npm package */}
-                                    <input
-                                        className={classnames('form-control form-control-lg', {
-                                            'is-invalid': errors.password
-                                        })}
-
-                                        type="password"
-                                        placeholder="Password"
-                                        name="password"
-                                        value={ this.state.password }
-                                        onChange={ this.onChange }
-                                    />
-
-                                    {/* provide the error messages under the input that is not validated */}
-                                    {errors.password && (<div className="invalid-feedback">{errors.password}</div>)}
-
-                                </div>
-                                <div className="form-group">
-
-                                    {/* CSS classnames use the classnames npm package */}
-                                    <input
-                                        className={classnames('form-control form-control-lg', {
-                                            'is-invalid': errors.password2
-                                        })}
-
-                                        type="password"
-                                        placeholder="Confirm Password"
-                                        name="password2"
-                                        value={ this.state.password2 }
-                                        onChange={ this.onChange }
-                                    />
-                                    {/* provide the error messages under the input that is not validated */}
-                                    {errors.password2 && (<div className="invalid-feedback">{errors.password2}</div>)}
-
-                                </div>
                                 <input type="submit" className="btn btn-info btn-block mt-4"/>
                             </form>
                         </div>

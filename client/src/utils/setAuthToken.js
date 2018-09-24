@@ -4,6 +4,10 @@
 
 import axios from 'axios';
 
+////////////////////////
+// Set JWT as header //
+//////////////////////
+
 const setAuthToken = token => {
     if(token) {
         // Apply the token to every request

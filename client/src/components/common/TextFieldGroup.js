@@ -6,7 +6,6 @@ import React from 'react';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
 
-
 ////////////////
 // Component //
 //////////////
@@ -36,12 +35,20 @@ const TextFieldGroup = ({
                 value={value}
                 disabled={disabled}
             />
+
+            {name === 'email' && (
+                <small className="form-text text-muted">This site uses Gravatar so if you want a
+                    profile image, use a Gravatar email
+                </small>)
+            }
+
             {/* provide the error messages under the input that is not validated */}
             {error && (<div className="invalid-feedback">{error}</div>)}
         </div>
     )
 };
 
+// Proptypes of the component
 TextFieldGroup.propTypes = {
     name: PropTypes.string.isRequired,
     placeholder: PropTypes.string,
@@ -53,6 +60,7 @@ TextFieldGroup.propTypes = {
     disabled: PropTypes.string
 };
 
+// Default proptype when none given
 TextFieldGroup.defaultProps = {
     type: 'text'
 };

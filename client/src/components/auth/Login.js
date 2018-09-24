@@ -100,6 +100,8 @@ class Login extends Component {
 
                             {/* On submit, fire up the onSubmit method*/}
                             <form onSubmit={this.onSubmit}>
+
+                                {/* Input textfields using the TextFieldGroup component */}
                                 <TextFieldGroup
                                     name="email"
                                     type="email"
