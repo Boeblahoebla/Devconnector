@@ -29,14 +29,14 @@ class NavBar extends Component {
         const authLinks = (
             <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                    <a className="nav-link" href="feed.html">
+                    <Link className="nav-link" to="feed.html">
                         Post Feed
-                    </a>
+                    </Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="dashboard.html">
+                    <Link className="nav-link" to="/dashboard">
                         Dashboard
-                    </a>
+                    </Link>
                 </li>
                 <li className="nav-item">
 

@@ -14,7 +14,7 @@ import Landing from './layout/Landing';
 import Register from './auth/Register';
 import Login from './auth/Login';
 
-import Dashboard from './dashboard/dashboard';
+import Dashboard from './dashboard/Dashboard';
 
 // Redux
 import { Provider } from 'react-redux';
@@ -51,7 +51,7 @@ if (localStorage.jwtToken) {
         // Clear the current profile
 
         fullApplicationStore.dispatch(clearCurrentProfile());
-        
+
         window.location.href = '/login';
     }
 }
