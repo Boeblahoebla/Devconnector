@@ -27,6 +27,7 @@ class Dashboard extends Component {
         // Dashboard content
         let dashboardContent;
 
+        // Check if profile is null or loading, if so show a spinner gif
         if (profile === null || loading) {
             dashboardContent = <Spinner />
         } else {
@@ -42,7 +43,7 @@ class Dashboard extends Component {
                         <p>You have not yet setup a profile. Please create a profile using the button below</p>
                         <Link to="/create-profile" className="btn btn-lg btn-info">Create Profile</Link>
                     </div>
-                    )
+                )
             }
         }
 
