@@ -5,6 +5,7 @@
 import { combineReducers } from 'redux';
 import authReducer from './authReducer';
 import errorsReducer from "./errorsReducer";
+import profileReducer from "./profileReducer";
 
 //////////////
 // Exports //
@@ -17,5 +18,6 @@ export default combineReducers({
     // .. errorsReducer is the reducer that returns errors
     //    when it gets dispatched by an action that produces errors
     auth: authReducer,
-    errors: errorsReducer
+    errors: errorsReducer,
+    profile: profileReducer
 });

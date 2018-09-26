@@ -28,11 +28,7 @@ const TextFieldGroup = (
                 disabled={disabled}
             />
 
-            {registerEmail === true && (
-                <small className="form-text text-muted">This site uses Gravatar so if you want a
-                    profile image, use a Gravatar email
-                </small>)
-            }
+            {info && (<small className="form-text text-muted">{info}</small>)}
 
             {/* provide the error messages under the input that is not validated */}
             {error && (<div className="invalid-feedback">{error}</div>)}
@@ -50,7 +46,6 @@ TextFieldGroup.propTypes = {
     type: PropTypes.string.isRequired,
     onChange: PropTypes.func.isRequired,
     disabled: PropTypes.string,
-    registerEmail: PropTypes.bool
 };
 
 // Default proptype when none given

@@ -2,7 +2,9 @@
   <dictionary name="DTPAdmin">
     <words>
       <w>classnames</w>
+      <w>gravatar</w>
       <w>redux</w>
+      <w>textfields</w>
     </words>
   </dictionary>
 </component>

@@ -107,7 +107,6 @@ class Register extends Component {
                                 <TextFieldGroup
                                     name="name"
                                     placeholder="Name"
-                                    type="text"
                                     value={ this.state.name }
                                     onChange={ this.onChange }
                                     error={ errors.name } />
@@ -116,10 +115,11 @@ class Register extends Component {
                                     name="email"
                                     placeholder="Email address"
                                     type="email"
+                                    info="This site uses an Gravatar.
+                                        If you want a profile picture use a Gravatar- email"
                                     value={ this.state.email }
                                     onChange={ this.onChange }
-                                    error={ errors.email }
-                                    registerEmail={true}/>
+                                    error={ errors.email } />
 
                                 <TextFieldGroup
                                     name="password"
