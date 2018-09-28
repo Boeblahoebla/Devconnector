@@ -48,7 +48,7 @@ InputGroup.propTypes = {
     onChange: PropTypes.func.isRequired,
 };
 
-// Default proptype when none given
+// Default prop type when none given
 InputGroup.DefaultProps = {
     type: 'text'
 };

@@ -13,6 +13,7 @@ import PropTypes from 'prop-types';
 const SelectListGroup = (
     {name, value, error, info, onChange, options}) => {
 
+    // Loop through the options (prop) to generate an option tag for each option
     const selectOptions = options.map(option => (
         <option key={option.label} value={option.value}>
             {option.label}
@@ -22,7 +23,10 @@ const SelectListGroup = (
     return (
         <div className="form-group">
 
-            {/* CSS classnames use the classnames npm package */}
+            {/* selectOptions is an array of option tags obtained by looping
+            the options array (prop). Using the .map method selectOptions creates
+            an HTML option tag to place in the HTML select element below...
+            this for each element in the options array */}
             <select
                 className={classnames('form-control form-control-lg', {
                     'is-invalid': error

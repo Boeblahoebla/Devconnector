@@ -12,7 +12,6 @@ import TextAreaFieldGroup from '../common/TextAreaFieldGroup';
 import SelectListGroup from '../common/SelectListGroup';
 import InputGroup from '../common/InputGroup';
 
-
 ////////////////
 // Component //
 //////////////
@@ -60,11 +59,13 @@ class CreateProfile extends Component {
     }
 }
 
+// Prop types of the component
 CreateProfile.propTypes = {
     profile: PropTypes.object.isRequired,
     errors: PropTypes.object.isRequired
 };
 
+// Default prop type when none given
 const mapStateToProps = (state) => ({
     profile: state.profile,
     errors: state.errors
