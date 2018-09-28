@@ -11,12 +11,12 @@ import PropTypes from 'prop-types';
 //////////////
 
 const InputGroup = (
-    {name, placeholder, value, error, icon, type, onChange}) => {
+    {name, placeholder, value, error, icon, onChange}) => {
     return (
         <div className="input-group mb-3">
             <div className="input-group-prepend">
-                <span className="input-group text">
-                    <i className={icon} />
+                <span className="input-group-text">
+                    <i className={icon} style={{width: '30px'}}/>
                 </span>
             </div>
 
@@ -44,7 +44,6 @@ InputGroup.propTypes = {
     value: PropTypes.string.isRequired,
     icon: PropTypes.string,
     error: PropTypes.string,
-    type: PropTypes.string.isRequired,
     onChange: PropTypes.func.isRequired,
 };
 

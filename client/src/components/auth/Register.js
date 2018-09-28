@@ -109,7 +109,7 @@ class Register extends Component {
                                     placeholder="Name"
                                     value={ this.state.name }
                                     onChange={ this.onChange }
-                                    error={ errors.name } />
+                                    error={ errors.name }/>
 
                                 <TextFieldGroup
                                     name="email"
@@ -119,7 +119,8 @@ class Register extends Component {
                                         If you want a profile picture use a Gravatar- email"
                                     value={ this.state.email }
                                     onChange={ this.onChange }
-                                    error={ errors.email } />
+                                    error={ errors.email }
+                                    formType="registerEmail"/>
 
                                 <TextFieldGroup
                                     name="password"

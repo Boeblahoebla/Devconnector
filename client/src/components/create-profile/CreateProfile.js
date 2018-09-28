@@ -31,22 +31,7 @@ class CreateProfile extends Component {
         }
     }
 
-    // Method which is called when the user types in one of the fields
-    // e.target.name points to the name that is given to the input field in the JSX below
-    // e.target.value points to the current value typed in each of the text fields
-    onChange = (e) => {
-        this.setState({ [e.target.name]: e.target.value });
-    };
-
-    // Method which get called when the user submits the typed in values
-    // when clicking on the submit button
-    // This is made available by the onSubmit={ this.onSubmit } attribute in the form tag below
-
-    // Triggered when the user clicks the submit button
-    onSubmit = (e) => {
-        e.preventDefault()
-    };
-
+    // Rendering of page & functionality
     render() {
 
         // Pull the errors object from the state
@@ -65,6 +50,7 @@ class CreateProfile extends Component {
             { label: 'Other', value: "Other"}
         ];
 
+        // Page content
         return (
             <div className="create-profile">
                 <div className="container">
@@ -119,7 +105,7 @@ class CreateProfile extends Component {
                                     info="Could be your own website or the one of your company"
                                 />
 
-                                {/* Location text field, accepts an array */}
+                                {/* Location text field */}
                                 <TextFieldGroup
                                     placeholder="Location"
                                     name="location"
@@ -160,22 +146,102 @@ class CreateProfile extends Component {
                                     info="Tell us a little about yourself"
                                 />
 
+                                {/* Social media toggler */}
                                 <div className="mb-3">
-                                    <button onClick={() =>
-                                        this.setState(prevState => ({
-                                            displaySocialInputs: !prevState.displaySocialInputs
-                                        }))
-                                    } className="btn btn-light">Social media links</button>
+                                    <button
+                                        onClick={this.toggleSocial}
+                                        className="btn btn-light">
+                                            Social media links
+                                    </button>
                                 </div>
 
-                            </form>
+                                {/* Social media inputs */}
+                                {this.state.displaySocialInputs && (
+                                    <div>
+                                        {/* Facebook */}
+                                        <InputGroup
+                                            placeholder="Facebook page URL"
+                                            name="facebook"
+                                            icon="fab fa-facebook"
+                                            value={ this.state.facebook }
+                                            onChange={this.onChange }
+                                            error={ errors.facebook }
+                                        />
 
+                                        {/* Twitter */}
+                                        <InputGroup
+                                            placeholder="Twitter page URL"
+                                            name="twitter"
+                                            icon="fab fa-twitter"
+                                            value={ this.state.twitter }
+                                            onChange={ this.onChange }
+                                            error={ errors.twitter }
+                                        />
+
+                                        {/* LinkedIn */}
+                                        <InputGroup
+                                            placeholder="LinkedIn page URL"
+                                            name="linkedIn"
+                                            icon="fab fa-linkedin"
+                                            value={ this.state.linkedIn }
+                                            onChange={ this.onChange }
+                                            error={ errors.linkedIn }
+                                        />
+
+                                        {/* Youtube */}
+                                        <InputGroup
+                                            placeholder="Youtube page URL"
+                                            name="youtube"
+                                            icon="fab fa-youtube"
+                                            value={ this.state.youtube }
+                                            onChange={ this.onChange }
+                                            error={ errors.youtube }
+                                        />
+
+                                        {/* Instagram */}
+                                        <InputGroup
+                                            placeholder="Instagram page URL"
+                                            name="instagram"
+                                            icon="fab fa-instagram"
+                                            value={ this.state.instagram }
+                                            onChange={ this.onChange }
+                                            error={ errors.instagram }
+                                        />
+                                    </div>
+                                )}
+
+                                {/* Submit button */}
+                                <input type="submit" onSubmit={this.onSubmit} className="btn btn-info btn-block mt-4"/>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         );
     }
+
+    // Component methods
+    //////////////////////
+
+    // Called when the user types in one of the fields
+    onChange = (e) => {
+        // e.target.name = name of html element - e.target.value = value of html element
+        this.setState({ [e.target.name]: e.target.value });
+    };
+
+    // Called when clicking the submit button
+    onSubmit = (e) => {
+        e.preventDefault();
+        console.log("submitted");
+    };
+
+    // Called when clicking the Social Media toggler
+    toggleSocial = () => {
+        this.setState(prevState => ({
+            // Set boolean displaySocialInputs to inverse of its previous state
+            displaySocialInputs: !prevState.displaySocialInputs
+        }))
+    };
 }
 
 // Prop types of the component
