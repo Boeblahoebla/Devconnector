@@ -4,11 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/routes/api/users.js" description="// @route   GET api/users/register&#10;// @desc    Reg..." line="31" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63b44a66-c0f0-4b49-9f00-29798cd8d194" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/common/InputGroup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/common/SelectListGroup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/common/TextAreaFieldGroup.js" afterDir="false" />
+    <list default="true" id="63b44a66-c0f0-4b49-9f00-29798cd8d194" name="Default" comment="Added more input elemements - components to the Create Profile component&#10;-&gt; TextFieldGroups&#10;-&gt; .. Company&#10;-&gt; .. Website&#10;-&gt; .. Location&#10;-&gt; .. Skills&#10;-&gt; .. Github username&#10;-&gt; TextAreaGroups&#10;-&gt; .. Bio">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/common/SelectListGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/common/SelectListGroup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/create-profile/CreateProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/create-profile/CreateProfile.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -33,7 +31,7 @@
           <file leaf-file-name="PrivateRoute.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/components/common/PrivateRoute.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="431">
+                <state relative-caret-position="493">
                   <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
@@ -57,20 +55,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="TextFieldGroup.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/src/components/common/TextFieldGroup.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="432">
-                  <caret line="50" selection-start-line="50" selection-end-line="50" selection-end-column="35" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="CreateProfile.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/src/components/create-profile/CreateProfile.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+                <state relative-caret-position="272">
+                  <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#43#82#0" expanded="true" />
@@ -80,38 +69,67 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="Register.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/components/auth/Register.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="489">
+                  <caret line="62" column="95" lean-forward="true" selection-start-line="53" selection-start-column="4" selection-end-line="62" selection-end-column="95" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                    <element signature="e#52#91#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file leaf-file-name="TextAreaFieldGroup.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/src/components/common/TextAreaFieldGroup.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SelectListGroup.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/src/components/common/SelectListGroup.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="InputGroup.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/client/src/components/common/InputGroup.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="500">
-                  <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
+        <splitter split-orientation="horizontal" split-proportion="0.5">
+          <split-first>
+            <splitter split-orientation="vertical" split-proportion="0.5">
+              <split-first>
+                <leaf>
+                  <file leaf-file-name="InputGroup.js" pinned="false" current-in-tab="true">
+                    <entry file="file://$PROJECT_DIR$/client/src/components/common/InputGroup.js">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state relative-caret-position="208">
+                          <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                </leaf>
+              </split-first>
+              <split-second>
+                <leaf>
+                  <file leaf-file-name="TextAreaFieldGroup.js" pinned="false" current-in-tab="true">
+                    <entry file="file://$PROJECT_DIR$/client/src/components/common/TextAreaFieldGroup.js">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state relative-caret-position="308">
+                          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                </leaf>
+              </split-second>
+            </splitter>
+          </split-first>
+          <split-second>
+            <leaf>
+              <file leaf-file-name="SelectListGroup.js" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/client/src/components/common/SelectListGroup.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="588">
+                      <caret line="42" column="14" selection-start-line="42" selection-end-line="43" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
       </split-second>
     </splitter>
   </component>
@@ -188,8 +206,8 @@
         <option value="$PROJECT_DIR$/client/src/components/App.js" />
         <option value="$PROJECT_DIR$/client/src/components/common/TextAreaGroup.js" />
         <option value="$PROJECT_DIR$/client/src/components/common/TextAreaFieldGroup.js" />
-        <option value="$PROJECT_DIR$/client/src/components/common/SelectListGroup.js" />
         <option value="$PROJECT_DIR$/client/src/components/common/InputGroup.js" />
+        <option value="$PROJECT_DIR$/client/src/components/common/SelectListGroup.js" />
         <option value="$PROJECT_DIR$/client/src/components/create-profile/CreateProfile.js" />
       </list>
     </option>
@@ -248,6 +266,12 @@
               <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="Web-developer_22_FullStack-MERN-app" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="devconnector_theme" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web-developer_22_FullStack-MERN-app" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -262,6 +286,14 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web-developer_22_FullStack-MERN-app" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
@@ -345,7 +377,7 @@
       <workItem from="1538131405499" duration="903000" />
       <workItem from="1538135982147" duration="707000" />
       <workItem from="1538136772363" duration="322000" />
-      <workItem from="1538137175762" duration="3813000" />
+      <workItem from="1538137175762" duration="8798000" />
     </task>
     <task id="LOCAL-00001" summary="Created user model&#10;-&gt; Created registration logic to users.js&#10;-&gt; Created login logic through username &amp; password&#10;-&gt; Created JSON web token&#10;-&gt; Added JWT strategy">
       <created>1537030166778</created>
@@ -564,11 +596,25 @@
       <option name="project" value="LOCAL" />
       <updated>1538139517586</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Created 3 components which will be reused throughout the project&#10;-&gt; TextAreaFieldGroup&#10;-&gt; SelectListGroup&#10;-&gt; InputGroup&#10;&#10;Added them as imports in CreateProfile.js where they will be used extensively">
+      <created>1538141061994</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1538141061994</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Added some comments explaining the actions taken&#10;-&gt; InputGroup.js&#10;-&gt; SelectGroup.js&#10;-&gt; CreateProfile.js">
+      <created>1538142282587</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1538142282587</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139861000" />
+    <option name="totallyTimeSpent" value="144846000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1290" y="0" width="2574" height="991" extended-state="0" />
@@ -648,8 +694,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added get profile route&#10;Added a route to create and update a profile&#10;Added validation to the route to create and update&#10;Tested with postman" />
-    <MESSAGE value="Added routes for&#10;-&gt; Get profile by handle&#10;-&gt; Get profile by user_id&#10;-&gt; GEt all profiles&#10;tested with postman" />
     <MESSAGE value="Added routes to create an experience and education to add to the profile&#10;-&gt; Post new experience on /api/profile/experience&#10;-&gt; Post new education on /api/profile/education&#10;-&gt; Added validation to both new endpoints&#10;tested with postman" />
     <MESSAGE value="Added routes to delete an experience from the profile&#10;-&gt; Delete experience on /api/profile/experience/:exp_id&#10;tested with postman" />
     <MESSAGE value="Added routes to delete an experience and education from the profile&#10;-&gt; Delete experience on /api/profile/experience/:exp_id&#10;-&gt; Delete education on /api/profile/education/:exp_id" />
@@ -673,7 +717,9 @@
     <MESSAGE value="Created a spinner component&#10;Started on the dashboard component&#10;-&gt; Added a check if the profile is null or loading&#10;-&gt; .. If loading the spinner now shows&#10;-&gt; If the profile is not empty a header shows with profile username&#10;-&gt; If the profile is empty a welcome message appears prompting the user to create a profile" />
     <MESSAGE value="Added a private route component which receives minimum 2 props&#10;-&gt; the component to go to&#10;-&gt; authentication info&#10;-&gt; .. If authenticated then the component as a prop gets rendered&#10;-&gt; .. If not authenticated the private route component redirects to /login&#10;&#10;Imported and used Switch in App.js and enclosed the PrivateRoute- component to the dashboard inside &lt;Switch&gt;&lt;/Switch&gt; tags to ensure the redirection works on this private route&#10;&#10;Check https://tylermcginnis.com/react-router-protected-routes-authentication/ for more information" />
     <MESSAGE value="Created the CreateProfile component and added it to App.js as private route&#10;-&gt; Created the proptypes for this component&#10;-&gt; Created the function mapStateToProps&#10;-&gt; Connected CreateProfile to redux store with mapStateToProps" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the CreateProfile component and added it to App.js as private route&#10;-&gt; Created the proptypes for this component&#10;-&gt; Created the function mapStateToProps&#10;-&gt; Connected CreateProfile to redux store with mapStateToProps" />
+    <MESSAGE value="Created 3 components which will be reused throughout the project&#10;-&gt; TextAreaFieldGroup&#10;-&gt; SelectListGroup&#10;-&gt; InputGroup&#10;&#10;Added them as imports in CreateProfile.js where they will be used extensively" />
+    <MESSAGE value="Added some comments explaining the actions taken&#10;-&gt; InputGroup.js&#10;-&gt; SelectGroup.js&#10;-&gt; CreateProfile.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some comments explaining the actions taken&#10;-&gt; InputGroup.js&#10;-&gt; SelectGroup.js&#10;-&gt; CreateProfile.js" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -825,17 +871,6 @@
     <entry file="file://$PROJECT_DIR$/client/src/components/common/media/spinner.gif">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/auth/Register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1731">
-          <caret line="160" column="29" lean-forward="true" selection-start-line="160" selection-end-line="160" selection-end-column="29" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#52#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/validation/education.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -921,20 +956,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/devconnector_theme/create-profile.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/common/PrivateRoute.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#52#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
@@ -943,20 +964,6 @@
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#43#82#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/common/TextAreaFieldGroup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/common/SelectListGroup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -974,22 +981,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/common/TextFieldGroup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
+        <state relative-caret-position="441">
           <caret line="50" selection-start-line="50" selection-end-line="50" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/common/TextAreaFieldGroup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/common/InputGroup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="208">
+          <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/common/PrivateRoute.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#52#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/auth/Register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="62" column="95" lean-forward="true" selection-start-line="53" selection-start-column="4" selection-end-line="62" selection-end-column="95" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#52#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/devconnector_theme/create-profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/common/SelectListGroup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="42" column="14" selection-start-line="42" selection-end-line="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/create-profile/CreateProfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="272">
+          <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#43#82#0" expanded="true" />

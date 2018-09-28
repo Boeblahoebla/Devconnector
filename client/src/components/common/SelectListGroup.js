@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
 //////////////
 
 const SelectListGroup = (
-    {name, value, error, info, onChange, options}) => {
+    {name, value, error, info, onChange, options, placeholder}) => {
 
     // Loop through the options (prop) to generate an option tag for each option
     const selectOptions = options.map(option => (
@@ -31,6 +31,7 @@ const SelectListGroup = (
                 className={classnames('form-control form-control-lg', {
                     'is-invalid': error
                 })}
+                placeholder={placeholder}
                 name={name}
                 onChange={onChange}
                 value={value}>
@@ -52,7 +53,8 @@ SelectListGroup.propTypes = {
     info: PropTypes.string,
     error: PropTypes.string,
     onChange: PropTypes.func.isRequired,
-    options: PropTypes.array.isRequired
+    options: PropTypes.array.isRequired,
+    placeholder: PropTypes.string.isRequired
 };
 
 //////////////
