@@ -36,10 +36,10 @@ class Dashboard extends Component {
                 // object is filled with data
                 dashboardContent = <h4>Display profile for {user.name}</h4>
             } else {
-                // user is logged in but has no profile
+                // user is logged in but has no profile. Prompt the user to create one
                 dashboardContent = (
                     <div>
-                        <p class="lead text-muted">Welcome {user.name}</p>
+                        <p className="lead text-muted">Welcome {user.name}</p>
                         <p>You have not yet setup a profile. Please create a profile using the button below</p>
                         <Link to="/create-profile" className="btn btn-lg btn-info">Create Profile</Link>
                     </div>
