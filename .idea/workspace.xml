@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63b44a66-c0f0-4b49-9f00-29798cd8d194" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/add-credentials/Add-Education.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/add-credentials/Add-Experience.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/edit-profile/Edit-Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/edit-profile/Edit-Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/add-credentials/Add-Education.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/add-credentials/Add-Education.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/profileActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/profileActions.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,14 +26,14 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.44742537">
+    <splitter split-orientation="horizontal" split-proportion="0.4461272">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="TextFieldGroup.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/components/common/TextFieldGroup.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="364">
-                  <caret line="46" column="40" lean-forward="true" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
+                <state relative-caret-position="170">
+                  <caret line="10" selection-start-line="10" selection-end-line="10" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#43#69#0" expanded="true" />
@@ -43,64 +42,59 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Add-Experience.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/client/src/components/add-credentials/Add-Experience.js">
+          <file leaf-file-name="Add-Education.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/src/components/add-credentials/Add-Education.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="313">
-                  <caret line="153" column="39" lean-forward="true" selection-start-line="153" selection-start-column="39" selection-end-line="153" selection-end-column="39" />
+                <state relative-caret-position="-2295">
+                  <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
-                    <element signature="e#43#84#0" expanded="true" />
-                    <element signature="e#229#283#0" expanded="true" />
+                    <element signature="e#43#82#0" expanded="true" />
+                    <element signature="e#235#289#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="add-experience.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/devconnector_theme/add-experience.html">
-              <provider selected="true" editor-type-id="text-editor" />
+          <file leaf-file-name="Add-Experience.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/components/add-credentials/Add-Experience.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="416">
+                  <caret line="54" column="38" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                    <element signature="e#43#84#0" expanded="true" />
+                    <element signature="e#238#292#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
             </entry>
           </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="Dashboard.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js">
+          <file leaf-file-name="profileActions.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/redux/actions/profileActions.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1071">
-                  <caret line="78" column="29" lean-forward="true" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
+                <state relative-caret-position="-272">
+                  <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
                   <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                    <element signature="e#43#82#0" expanded="true" />
+                    <element signature="e#0#26#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/src/components/App.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="78" column="26" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
+                <state relative-caret-position="476">
+                  <caret line="35" column="10" lean-forward="true" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#59#100#0" expanded="true" />
                     <element signature="e#191#228#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="CreateProfile.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/client/src/components/create-profile/CreateProfile.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="225" column="32" selection-start-line="225" selection-start-column="32" selection-end-line="225" selection-end-column="53" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                    <element signature="e#43#82#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -180,12 +174,12 @@
         <option value="$PROJECT_DIR$/client/src/components/common/InputGroup.js" />
         <option value="$PROJECT_DIR$/client/src/components/dashboard/ProfileActions.js" />
         <option value="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" />
-        <option value="$PROJECT_DIR$/client/src/redux/actions/profileActions.js" />
-        <option value="$PROJECT_DIR$/client/src/components/add-credentials/Add-Education.js" />
         <option value="$PROJECT_DIR$/client/src/components/edit-profile/Edit-Profile.js" />
-        <option value="$PROJECT_DIR$/client/src/components/App.js" />
         <option value="$PROJECT_DIR$/client/src/components/create-profile/CreateProfile.js" />
         <option value="$PROJECT_DIR$/client/src/components/add-credentials/Add-Experience.js" />
+        <option value="$PROJECT_DIR$/client/src/components/App.js" />
+        <option value="$PROJECT_DIR$/client/src/redux/actions/profileActions.js" />
+        <option value="$PROJECT_DIR$/client/src/components/add-credentials/Add-Education.js" />
       </list>
     </option>
   </component>
@@ -242,12 +236,6 @@
               <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="Web-developer_22_FullStack-MERN-app" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="devconnector_theme" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web-developer_22_FullStack-MERN-app" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -270,30 +258,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="add-credentials" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web-developer_22_FullStack-MERN-app" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web-developer_22_FullStack-MERN-app" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="create-profile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web-developer_22_FullStack-MERN-app" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
@@ -386,7 +350,7 @@
       <workItem from="1538135982147" duration="707000" />
       <workItem from="1538136772363" duration="322000" />
       <workItem from="1538137175762" duration="8798000" />
-      <workItem from="1538396185064" duration="2551000" />
+      <workItem from="1538396185064" duration="7109000" />
     </task>
     <task id="LOCAL-00001" summary="Created user model&#10;-&gt; Created registration logic to users.js&#10;-&gt; Created login logic through username &amp; password&#10;-&gt; Created JSON web token&#10;-&gt; Added JWT strategy">
       <created>1537030166778</created>
@@ -633,15 +597,28 @@
       <option name="project" value="LOCAL" />
       <updated>1538392704612</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Created the AddExperience component&#10;-&gt; Added all the fields&#10;-&gt; Set the state&#10;-&gt; Connected the state through Redux&#10;-&gt; .. NO actions as of yet&#10;-&gt; .. NO reducer as of yet">
+      <created>1538398924345</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1538398924345</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Added functionality to the Add-Experience component&#10;-&gt; Axios request now gets done&#10;Added addExperienceAction to profileActions.js to handle the axios request&#10;-&gt; Updated the addExperience component &#10;-&gt; When submit-errors occur componentWillReceiveProps re renders w/ errors">
+      <created>1538399935428</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1538399935428</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158579000" />
+    <option name="totallyTimeSpent" value="163137000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1290" y="0" width="2577" height="991" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.089799136" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -651,7 +628,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32942554" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24990146" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.13833529" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.19695194" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32991722" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -717,8 +694,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added routes to delete an experience and education from the profile&#10;-&gt; Delete experience on /api/profile/experience/:exp_id&#10;-&gt; Delete education on /api/profile/education/:exp_id" />
-    <MESSAGE value="Added routes to delete a profile and user&#10;-&gt; Delete profile &amp; user on /api/profile&#10;Tested on Postman" />
     <MESSAGE value="Added the Schema for the forum Posts" />
     <MESSAGE value="Added a route to create a post&#10;-&gt; POST post at /api/posts/&#10;tested with postman" />
     <MESSAGE value="Added a route to delete a post&#10;-&gt; DELETE post at /api/posts/:id&#10;tested with postman" />
@@ -742,7 +717,9 @@
     <MESSAGE value="Added some comments explaining the actions taken&#10;-&gt; InputGroup.js&#10;-&gt; SelectGroup.js&#10;-&gt; CreateProfile.js" />
     <MESSAGE value="Finished CreateProfile component&#10;-&gt; Added functionality &amp; axios request&#10;-&gt; .. Profile is now added&#10;&#10;Started on the dashboard component&#10;-&gt; Added buttons to the dashboard component&#10;-&gt; .. Edit profile, Link to /edit-profile&#10;-&gt; .. Add experience, Link to /add-experience&#10;-&gt; .. Add education, Link to /add-education&#10;-&gt; .. Delete account&#10;-&gt; ..... Deletes account&#10;&#10;Added to the Redux profileActions.js to contain the actions doing the axios requests" />
     <MESSAGE value="Created the Edit profile component&#10;-&gt; Added under /src/components/edit-profile/Edit-Profile.js&#10;-&gt; Added functionality to edit a profile&#10;-&gt; .. Profile now edited and saved" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the Edit profile component&#10;-&gt; Added under /src/components/edit-profile/Edit-Profile.js&#10;-&gt; Added functionality to edit a profile&#10;-&gt; .. Profile now edited and saved" />
+    <MESSAGE value="Created the AddExperience component&#10;-&gt; Added all the fields&#10;-&gt; Set the state&#10;-&gt; Connected the state through Redux&#10;-&gt; .. NO actions as of yet&#10;-&gt; .. NO reducer as of yet" />
+    <MESSAGE value="Added functionality to the Add-Experience component&#10;-&gt; Axios request now gets done&#10;Added addExperienceAction to profileActions.js to handle the axios request&#10;-&gt; Updated the addExperience component &#10;-&gt; When submit-errors occur componentWillReceiveProps re renders w/ errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added functionality to the Add-Experience component&#10;-&gt; Axios request now gets done&#10;Added addExperienceAction to profileActions.js to handle the axios request&#10;-&gt; Updated the addExperience component &#10;-&gt; When submit-errors occur componentWillReceiveProps re renders w/ errors" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -750,13 +727,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/passport.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/api/users.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1598">
@@ -928,6 +898,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#52#78#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -945,6 +919,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
           <caret line="40" column="41" lean-forward="true" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#43#82#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -994,19 +972,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/redux/actions/profileActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/add-credentials/Add-Education.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/ProfileActions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1029,18 +994,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="78" column="26" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#59#100#0" expanded="true" />
-            <element signature="e#191#228#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
@@ -1052,24 +1005,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/common/TextFieldGroup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="46" column="40" lean-forward="true" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#43#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/devconnector_theme/add-experience.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/create-profile/CreateProfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="225" column="32" selection-start-line="225" selection-start-column="32" selection-end-line="225" selection-end-column="53" />
+        <state relative-caret-position="646">
+          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#43#82#0" expanded="true" />
@@ -1077,14 +1019,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/devconnector_theme/add-education.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/common/TextFieldGroup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#43#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/add-credentials/Add-Experience.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="153" column="39" lean-forward="true" selection-start-line="153" selection-start-column="39" selection-end-line="153" selection-end-column="39" />
+        <state relative-caret-position="416">
+          <caret line="54" column="38" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#43#84#0" expanded="true" />
-            <element signature="e#229#283#0" expanded="true" />
+            <element signature="e#238#292#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/redux/actions/profileActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-272">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="35" column="10" lean-forward="true" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#59#100#0" expanded="true" />
+            <element signature="e#191#228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/add-credentials/Add-Education.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2295">
+          <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#43#82#0" expanded="true" />
+            <element signature="e#235#289#0" expanded="true" />
           </folding>
         </state>
       </provider>

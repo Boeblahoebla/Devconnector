@@ -19,6 +19,7 @@ import CreateProfile from './create-profile/CreateProfile';
 import EditProfile from './edit-profile/Edit-Profile';
 
 import AddExperience from '../components/add-credentials/Add-Experience';
+import AddEducation from '../components/add-credentials/Add-Education';
 
 import PrivateRoute from'./common/PrivateRoute';
 
@@ -87,6 +88,9 @@ class App extends Component {
                             </Switch>
                             <Switch>
                                 <PrivateRoute exact path="/add-experience" component={ AddExperience } />
+                            </Switch>
+                            <Switch>
+                                <PrivateRoute exact path="/add-education" component={ AddEducation } />
                             </Switch>
                         </div>
 
