@@ -18,6 +18,8 @@ import Dashboard from './dashboard/Dashboard';
 import CreateProfile from './create-profile/CreateProfile';
 import EditProfile from './edit-profile/Edit-Profile';
 
+import AddExperience from '../components/add-credentials/Add-Experience';
+
 import PrivateRoute from'./common/PrivateRoute';
 
 // Redux
@@ -82,6 +84,9 @@ class App extends Component {
                             </Switch>
                             <Switch>
                                 <PrivateRoute exact path="/edit-profile" component={ EditProfile } />
+                            </Switch>
+                            <Switch>
+                                <PrivateRoute exact path="/add-experience" component={ AddExperience } />
                             </Switch>
                         </div>
 

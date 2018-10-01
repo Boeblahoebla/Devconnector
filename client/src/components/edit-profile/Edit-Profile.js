@@ -36,6 +36,7 @@ class CreateProfile extends Component {
         }
     }
 
+    // When the component mounts, get the current profile to fill in the fields
     componentDidMount() {
         this.props.getCurrentProfile();
     }
@@ -328,7 +329,7 @@ CreateProfile.propTypes = {
     errors: PropTypes.object.isRequired
 };
 
-// Default prop type when none given
+// add the state as a prop
 const mapStateToProps = (state) => ({
     profile: state.profile,
     errors: state.errors
