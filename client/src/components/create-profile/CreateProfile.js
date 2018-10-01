@@ -5,12 +5,16 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { withRouter } from 'react-router-dom';
 
 // Components
 import TextFieldGroup from '../common/TextFieldGroup';
 import TextAreaFieldGroup from '../common/TextAreaFieldGroup';
 import SelectListGroup from '../common/SelectListGroup';
 import InputGroup from '../common/InputGroup';
+
+// Actions
+import { createProfileAction } from '../../redux/actions/profileActions';
 
 ////////////////
 // Component //
@@ -31,6 +35,15 @@ class CreateProfile extends Component {
         }
     }
 
+    // Lifecycle method of React for when the component receives new props,
+    // Check to see if there are errors. If there are errors,
+    // add the errors to the component state
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.errors) {
+            this.setState({ errors: nextProps.errors });
+        }
+    }
+
     // Rendering of page & functionality
     render() {
 
@@ -39,15 +52,15 @@ class CreateProfile extends Component {
 
         // Select options for status
         const options = [
-            { label: '* Select professional status', value: '0'},
+            { label: '* Select professional status', value: 0},
             { label: 'Developer', value: 'Developer'},
             { label: 'Junior Developer', value: 'Junior Developer'},
             { label: 'Senior Developer', value: 'Senior Developer'},
             { label: 'Manager', value: 'Manager' },
             { label: 'Student or Learning', value: 'Student or Learning' },
             { label: 'Instructor or Teacher', value: 'Instructor or Teacher' },
-            { label: 'Intern', value: "Intern" },
-            { label: 'Other', value: "Other"}
+            { label: 'Intern', value: 'Intern' },
+            { label: 'Other', value: 'Other'}
         ];
 
         // Page content
@@ -69,7 +82,7 @@ class CreateProfile extends Component {
                                     name="handle"
                                     value={ this.state.handle }
                                     onChange={ this.onChange }
-                                    errors={ errors.handle }
+                                    error={ errors.handle }
                                     info="A unique handle for your profile URL: your full name,
                                     company name, etc..."
                                 />
@@ -80,7 +93,7 @@ class CreateProfile extends Component {
                                     name="status"
                                     value={ this.state.status }
                                     onChange={ this.onChange }
-                                    options={options}
+                                    options={ options }
                                     error={ errors.status }
                                     info="Give us an idea of where you are at in your career"
                                 />
@@ -91,7 +104,7 @@ class CreateProfile extends Component {
                                     name="company"
                                     value={ this.state.company }
                                     onChange={ this.onChange }
-                                    errors={ errors.company }
+                                    error={ errors.company }
                                     info="Could be your own company or the one you currently work for"
                                 />
 
@@ -101,7 +114,7 @@ class CreateProfile extends Component {
                                     name="website"
                                     value={ this.state.website }
                                     onChange= {this.onChange }
-                                    errors={ errors.website }
+                                    error={ errors.website }
                                     info="Could be your own website or the one of your company"
                                 />
 
@@ -111,7 +124,7 @@ class CreateProfile extends Component {
                                     name="location"
                                     value={ this.state.location }
                                     onChange={ this.onChange }
-                                    errors={ errors.location }
+                                    error={ errors.location }
                                     info="Postcode & City suggested (eg. 9900 Eeklo)"
                                 />
 
@@ -121,7 +134,7 @@ class CreateProfile extends Component {
                                     name="skills"
                                     value={ this.state.skills }
                                     onChange={ this.onChange }
-                                    errors={ errors.skills }
+                                    error={ errors.skills }
                                     info="Please use comma separated values (eg. HTML, CSS, Javascript, Python)"
                                 />
 
@@ -131,7 +144,7 @@ class CreateProfile extends Component {
                                     name="githubUsername"
                                     value={this.state.githubUsername}
                                     onChange={ this.onChange }
-                                    errors={ errors.githubUsername }
+                                    error={ errors.githubUsername }
                                     info="If you want your latest repos and a
                                     Github Link to show, inclusde your username"
                                 />
@@ -142,7 +155,7 @@ class CreateProfile extends Component {
                                     name="bio"
                                     value={ this.state.bio }
                                     onChange={ this.onChange }
-                                    errors={ errors.bio }
+                                    error={ errors.bio }
                                     info="Tell us a little about yourself"
                                 />
 
@@ -233,6 +246,25 @@ class CreateProfile extends Component {
     onSubmit = (e) => {
         e.preventDefault();
         console.log("submitted");
+
+        const profileData = {
+            handle: this.state.handle,
+            company: this.state.company,
+            website: this.state.website,
+            location: this.state.location,
+            status: this.state.status,
+            skills: this.state.skills,
+            githubUsername: this.state.githubUsername,
+            bio: this.state.bio,
+            twitter: this.state.twitter,
+            facebook: this.state.facebook,
+            linkedIn: this.state.linkedIn,
+            youtube: this.state.youtube,
+            instagram: this.state.instagram
+
+        };
+
+        this.props.createProfileAction(profileData, this.props.history)
     };
 
     // Called when clicking the Social Media toggler
@@ -260,4 +292,4 @@ const mapStateToProps = (state) => ({
 // Exports //
 ////////////
 
-export default connect(mapStateToProps)(CreateProfile);
+export default connect(mapStateToProps, { createProfileAction })(withRouter(CreateProfile));
