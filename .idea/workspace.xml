@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63b44a66-c0f0-4b49-9f00-29798cd8d194" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/ProfileActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/edit-profile/Edit-Profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/create-profile/CreateProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/create-profile/CreateProfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/profileActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/profileActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/App.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,11 +28,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.44699264">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Dashboard.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Dashboard.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="401">
-                  <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+                <state relative-caret-position="282">
+                  <caret line="86" column="40" lean-forward="true" selection-start-line="86" selection-start-column="40" selection-end-line="86" selection-end-column="40" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#43#82#0" expanded="true" />
@@ -43,14 +41,56 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/components/App.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="959">
+                  <caret line="92" column="5" lean-forward="true" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                    <element signature="e#59#100#0" expanded="true" />
+                    <element signature="e#191#228#0" expanded="true" />
+                    <element signature="e#550#589#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="ProfileActions.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/ProfileActions.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="24" column="2" lean-forward="true" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+                <state relative-caret-position="323">
+                  <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#43#69#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CreateProfile.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/components/create-profile/CreateProfile.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="170">
+                  <caret line="13" column="46" lean-forward="true" selection-end-line="294" selection-end-column="92" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                    <element signature="e#43#82#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Edit-Profile.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/src/components/edit-profile/Edit-Profile.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="544">
+                  <caret line="59" column="45" selection-start-line="59" selection-start-column="45" selection-end-line="59" selection-end-column="45" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                    <element signature="e#43#82#0" expanded="true" />
+                    <element signature="e#220#274#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -126,7 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/validation/profile.js" />
         <option value="$PROJECT_DIR$/models/Profile.js" />
         <option value="$PROJECT_DIR$/validation/experience.js" />
         <option value="$PROJECT_DIR$/validation/education.js" />
@@ -168,7 +207,6 @@
         <option value="$PROJECT_DIR$/client/src/components/common/Spinner.js" />
         <option value="$PROJECT_DIR$/client/src/components/common/PrivateRout.js" />
         <option value="$PROJECT_DIR$/client/src/components/common/PrivateRoute.js" />
-        <option value="$PROJECT_DIR$/client/src/components/App.js" />
         <option value="$PROJECT_DIR$/client/src/components/common/TextAreaGroup.js" />
         <option value="$PROJECT_DIR$/client/src/components/common/TextAreaFieldGroup.js" />
         <option value="$PROJECT_DIR$/client/src/components/common/SelectListGroup.js" />
@@ -177,6 +215,8 @@
         <option value="$PROJECT_DIR$/client/src/components/dashboard/ProfileActions.js" />
         <option value="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" />
         <option value="$PROJECT_DIR$/client/src/redux/actions/profileActions.js" />
+        <option value="$PROJECT_DIR$/client/src/components/App.js" />
+        <option value="$PROJECT_DIR$/client/src/components/edit-profile/Edit-Profile.js" />
       </list>
     </option>
   </component>
@@ -255,31 +295,7 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web-developer_22_FullStack-MERN-app" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web-developer_22_FullStack-MERN-app" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="create-profile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web-developer_22_FullStack-MERN-app" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="edit-profile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
@@ -1478,14 +1494,22 @@
       <option name="project" value="LOCAL" />
       <updated>1538142282587</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Finished CreateProfile component&#10;-&gt; Added functionality &amp; axios request&#10;-&gt; .. Profile is now added&#10;&#10;Started on the dashboard component&#10;-&gt; Added buttons to the dashboard component&#10;-&gt; .. Edit profile, Link to /edit-profile&#10;-&gt; .. Add experience, Link to /add-experience&#10;-&gt; .. Add education, Link to /add-education&#10;-&gt; .. Delete account&#10;-&gt; ..... Deletes account&#10;&#10;Added to the Redux profileActions.js to contain the actions doing the axios requests">
+      <created>1538391373869</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1538391373869</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154132000" />
+    <option name="totallyTimeSpent" value="155800000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1290" y="0" width="2577" height="991" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.089799136" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1572,7 +1596,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added routes to create an experience and education to add to the profile&#10;-&gt; Post new experience on /api/profile/experience&#10;-&gt; Post new education on /api/profile/education&#10;-&gt; Added validation to both new endpoints&#10;tested with postman" />
     <MESSAGE value="Added routes to delete an experience from the profile&#10;-&gt; Delete experience on /api/profile/experience/:exp_id&#10;tested with postman" />
     <MESSAGE value="Added routes to delete an experience and education from the profile&#10;-&gt; Delete experience on /api/profile/experience/:exp_id&#10;-&gt; Delete education on /api/profile/education/:exp_id" />
     <MESSAGE value="Added routes to delete a profile and user&#10;-&gt; Delete profile &amp; user on /api/profile&#10;Tested on Postman" />
@@ -1597,7 +1620,8 @@
     <MESSAGE value="Created the CreateProfile component and added it to App.js as private route&#10;-&gt; Created the proptypes for this component&#10;-&gt; Created the function mapStateToProps&#10;-&gt; Connected CreateProfile to redux store with mapStateToProps" />
     <MESSAGE value="Created 3 components which will be reused throughout the project&#10;-&gt; TextAreaFieldGroup&#10;-&gt; SelectListGroup&#10;-&gt; InputGroup&#10;&#10;Added them as imports in CreateProfile.js where they will be used extensively" />
     <MESSAGE value="Added some comments explaining the actions taken&#10;-&gt; InputGroup.js&#10;-&gt; SelectGroup.js&#10;-&gt; CreateProfile.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some comments explaining the actions taken&#10;-&gt; InputGroup.js&#10;-&gt; SelectGroup.js&#10;-&gt; CreateProfile.js" />
+    <MESSAGE value="Finished CreateProfile component&#10;-&gt; Added functionality &amp; axios request&#10;-&gt; .. Profile is now added&#10;&#10;Started on the dashboard component&#10;-&gt; Added buttons to the dashboard component&#10;-&gt; .. Edit profile, Link to /edit-profile&#10;-&gt; .. Add experience, Link to /add-experience&#10;-&gt; .. Add education, Link to /add-education&#10;-&gt; .. Delete account&#10;-&gt; ..... Deletes account&#10;&#10;Added to the Redux profileActions.js to contain the actions doing the axios requests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished CreateProfile component&#10;-&gt; Added functionality &amp; axios request&#10;-&gt; .. Profile is now added&#10;&#10;Started on the dashboard component&#10;-&gt; Added buttons to the dashboard component&#10;-&gt; .. Edit profile, Link to /edit-profile&#10;-&gt; .. Add experience, Link to /add-experience&#10;-&gt; .. Add education, Link to /add-education&#10;-&gt; .. Delete account&#10;-&gt; ..... Deletes account&#10;&#10;Added to the Redux profileActions.js to contain the actions doing the axios requests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1605,7 +1629,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/src/App.js" />
     <entry file="file://$PROJECT_DIR$/client/src/reducers/index.js" />
     <entry file="file://$PROJECT_DIR$/client/src/store.js" />
     <entry file="file://$PROJECT_DIR$/client/src/actions/authActions.js" />
@@ -1753,18 +1776,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="29" column="67" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#59#100#0" expanded="true" />
-            <element signature="e#191#228#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/common/TextAreaFieldGroup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1880,56 +1891,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/create-profile/CreateProfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="40" lean-forward="true" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#43#82#0" expanded="true" />
-            <element signature="e#173#227#0" expanded="true" />
-            <element signature="e#2418#2927#0" />
-            <element signature="e#3607#4059#0" />
-            <element signature="e#4152#4597#0" />
-            <element signature="e#4691#5130#0" />
-            <element signature="e#5222#5682#0" />
-            <element signature="e#5783#6318#0" />
-            <element signature="e#6406#6838#0" />
-            <element signature="e#7552#8023#0" />
-            <element signature="e#8121#8588#0" />
-            <element signature="e#8687#9159#0" />
-            <element signature="e#9257#9724#0" />
-            <element signature="e#9824#10301#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/devconnector_theme/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="69" column="21" selection-start-line="62" selection-start-column="10" selection-end-line="71" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/ProfileActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="2" lean-forward="true" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#43#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#43#82#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1939,6 +1904,64 @@
           <caret line="40" column="36" lean-forward="true" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="86" column="40" lean-forward="true" selection-start-line="86" selection-start-column="40" selection-end-line="86" selection-end-column="40" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#43#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/ProfileActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#43#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/create-profile/CreateProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="46" lean-forward="true" selection-end-line="294" selection-end-column="92" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#43#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="959">
+          <caret line="92" column="5" lean-forward="true" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#59#100#0" expanded="true" />
+            <element signature="e#191#228#0" expanded="true" />
+            <element signature="e#550#589#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/edit-profile/Edit-Profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="59" column="45" selection-start-line="59" selection-start-column="45" selection-end-line="59" selection-end-column="45" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#43#82#0" expanded="true" />
+            <element signature="e#220#274#0" expanded="true" />
           </folding>
         </state>
       </provider>
