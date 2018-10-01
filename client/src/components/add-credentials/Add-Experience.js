@@ -14,7 +14,7 @@ import TextFieldGroup from '../common/TextFieldGroup';
 import TextAreaFieldGroup from '../common/TextAreaFieldGroup';
 
 // Actions
-// import createExperienceAction from '../../redux/actions/experienceActions';
+import { addExperienceAction } from '../../redux/actions/profileActions';
 
 ////////////////
 // Component //
@@ -36,6 +36,15 @@ class AddExperience extends Component {
             description: '',
             disabled: false,
             errors: {}
+        }
+    }
+
+    // Lifecycle method of React for when the component receives new props,
+    // Check to see if there are errors. If there are errors,
+    // add the errors to the component state and render again
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.errors) {
+            this.setState({ errors: nextProps.errors });
         }
     }
 
@@ -157,6 +166,19 @@ class AddExperience extends Component {
     // Called when the user clicks the submit button
     onSubmit = (e) => {
         e.preventDefault();
+
+        const expData = {
+            company: this.state.company,
+            title: this.state.title,
+            location: this.state.location,
+            from: this.state.from,
+            to: this.state.to,
+            current: this.state.current,
+            description: this.state.description
+        };
+
+        this.props.addExperienceAction(expData, this.props.history);
+
         console.log('submitted');
     }
 }
@@ -167,6 +189,7 @@ class AddExperience extends Component {
 
 // Prop types of the component
 AddExperience.propTypes = {
+    addExperienceAction: PropTypes.func.isRequired,
     profile: PropTypes.object.isRequired,
     errors: PropTypes.object
 };
@@ -177,4 +200,4 @@ const mapStateToProps = (state) => ({
     errors: state.errors
 });
 
-export default connect(mapStateToProps)(withRouter(AddExperience));
+export default connect(mapStateToProps, { addExperienceAction })(withRouter(AddExperience));

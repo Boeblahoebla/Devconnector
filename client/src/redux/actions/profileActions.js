@@ -35,6 +35,17 @@ export const getCurrentProfile = () => dispatch => {
         }))
 };
 
+// Add a new experience to the profile
+export const addExperienceAction = (expData, history) => dispatch => {
+    axios
+        .post('/api/profile/experience', expData)
+        .then(res => history.push('/dashboard'))
+        .catch(err => dispatch({
+            type: GET_ERRORS,
+            payload: err.response.data
+        }))
+};
+
 // Delete account and profile
 export const deleteAccount =() => dispatch => {
     if(window.confirm('Are you sure you want to delete this account?')) {
