@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63b44a66-c0f0-4b49-9f00-29798cd8d194" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/profiles/Profiles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/profiles/ProfileItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/create-profile/CreateProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/create-profile/CreateProfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/edit-profile/Edit-Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/edit-profile/Edit-Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/profileActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/profileActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/reducers/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/reducers/profileReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profiles/Profiles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profiles/Profiles.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,82 +25,69 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="profileActions.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/redux/actions/profileActions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1504">
-              <caret line="135" column="12" lean-forward="true" selection-start-line="135" selection-start-column="12" selection-end-line="135" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="types.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/src/redux/actions/types.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profileReducer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/redux/reducers/profileReducer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#98#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateProfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/create-profile/CreateProfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="278" lean-forward="true" selection-start-line="278" selection-end-line="278" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#43#82#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1411">
-              <caret line="83" column="6" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="6" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#59#100#0" expanded="true" />
-                <element signature="e#191#228#0" expanded="true" />
-                <element signature="e#752#791#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Profiles.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/profiles/Profiles.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#43#82#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.44742537">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="profileActions.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/redux/actions/profileActions.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="433">
+                  <caret line="72" column="38" lean-forward="true" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ProfileItem.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/src/components/profiles/ProfileItem.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="374">
+                  <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                    <element signature="e#43#82#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Profiles.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/components/profiles/Profiles.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="348">
+                  <caret line="45" column="70" lean-forward="true" selection-start-line="45" selection-start-column="70" selection-end-line="45" selection-end-column="70" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                    <element signature="e#43#82#0" expanded="true" />
+                    <element signature="e#134#174#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="Dashboard.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="892">
+                  <caret line="90" column="40" lean-forward="true" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                    <element signature="e#43#82#0" expanded="true" />
+                    <element signature="e#342#388#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -131,8 +114,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/models/Post.js" />
-        <option value="$PROJECT_DIR$/routes/api/posts.js" />
         <option value="$PROJECT_DIR$/client/package.json" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/package.json" />
@@ -181,7 +162,9 @@
         <option value="$PROJECT_DIR$/client/src/components/App.js" />
         <option value="$PROJECT_DIR$/client/src/redux/reducers/profileReducer.js" />
         <option value="$PROJECT_DIR$/client/src/redux/actions/profileActions.js" />
+        <option value="$PROJECT_DIR$/client/src/components/profiles/Profile.js" />
         <option value="$PROJECT_DIR$/client/src/components/profiles/Profiles.js" />
+        <option value="$PROJECT_DIR$/client/src/components/profiles/ProfileItem.js" />
       </list>
     </option>
   </component>
@@ -247,6 +230,14 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web-developer_22_FullStack-MERN-app" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
@@ -347,7 +338,7 @@
       <workItem from="1538136772363" duration="322000" />
       <workItem from="1538137175762" duration="8798000" />
       <workItem from="1538396185064" duration="7379000" />
-      <workItem from="1538465471576" duration="13800000" />
+      <workItem from="1538465471576" duration="16752000" />
     </task>
     <task id="LOCAL-00001" summary="Created user model&#10;-&gt; Created registration logic to users.js&#10;-&gt; Created login logic through username &amp; password&#10;-&gt; Created JSON web token&#10;-&gt; Added JWT strategy">
       <created>1537030166778</created>
@@ -629,17 +620,23 @@
       <option name="project" value="LOCAL" />
       <updated>1538476720747</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Added Profiles.js to visualize the profiles as a public route&#10;-&gt; Connected with Redux along with its state&#10;Created the getProfiles action in profileActions&#10;Created the case for the profileReducer&#10;Added the route to App.js as a public route">
+      <created>1538484159657</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1538484159657</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177207000" />
+    <option name="totallyTimeSpent" value="180159000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1290" y="0" width="2577" height="991" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.089799136" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.089799136" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -647,7 +644,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32942554" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24990146" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.19695194" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.19695194" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32991722" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -713,7 +710,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a route to like and unlike a post&#10;-&gt; POST like at /api/posts/like&#10;-&gt; DELETE like at /api/posts/unlike/:id (where id is the post-id)&#10;tested with postman" />
     <MESSAGE value="Added React dependencies through create-react-app.&#10;Edited package.json of the server to have new scripts&#10;--&gt; concurrently running the server &amp; client devs through npm run dev&#10;--&gt; run the client&#10;--&gt; run npm install for both client and server&#10;&#10;Edited package.json of the client&#10;--&gt; proxy = http://localhost:5000" />
     <MESSAGE value="Cleaned up some of the bloatfiles of create-react-app&#10;Already set up the project to use Bootstrap and React.&#10;Added all the dependencies in the index.html file&#10;Cleaned the boilerplate of the index.html file and some mor formatting" />
     <MESSAGE value="Created the landing page&#10;--&gt; Created and added the Navbar component&#10;--&gt; Created and added the Landing component&#10;--&gt; Created and added the Footer component" />
@@ -738,7 +734,8 @@
     <MESSAGE value="Created the Add-Education component and added functionality&#10;-&gt; Connected through redux&#10;-&gt; Axios request gets done&#10;-&gt; Updated the addExperience component&#10;-&gt; Errors show&#10;-&gt; education gets added into DB" />
     <MESSAGE value="Added an experience and education component to add to the dashboard component&#10;-&gt; Experience component now shows all the experiences with deletion per experience&#10;-&gt; Education component now shows all the educations with deletion per education&#10;-&gt; All Redux actions were added to the profileActions.js" />
     <MESSAGE value="Added a back-button on the edit profile component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a back-button on the edit profile component" />
+    <MESSAGE value="Added Profiles.js to visualize the profiles as a public route&#10;-&gt; Connected with Redux along with its state&#10;Created the getProfiles action in profileActions&#10;Created the case for the profileReducer&#10;Added the route to App.js as a public route" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Profiles.js to visualize the profiles as a public route&#10;-&gt; Connected with Redux along with its state&#10;Created the getProfiles action in profileActions&#10;Created the case for the profileReducer&#10;Added the route to App.js as a public route" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -746,13 +743,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/devconnector_theme/post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/App.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -946,17 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#43#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/ProfileActions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1058,9 +1037,16 @@
     <entry file="file://$PROJECT_DIR$/client/src/components/profiles.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/redux/actions/types.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/create-profile/CreateProfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
+        <state relative-caret-position="4471">
           <caret line="278" lean-forward="true" selection-start-line="278" selection-end-line="278" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -1071,8 +1057,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="83" column="6" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="6" />
+        <state relative-caret-position="136">
+          <caret line="80" column="83" lean-forward="true" selection-start-line="80" selection-start-column="83" selection-end-line="80" selection-end-column="83" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#59#100#0" expanded="true" />
@@ -1092,31 +1078,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/profiles/Profiles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#43#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/redux/actions/profileActions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1504">
-          <caret line="135" column="12" lean-forward="true" selection-start-line="135" selection-start-column="12" selection-end-line="135" selection-end-column="12" />
+        <state relative-caret-position="433">
+          <caret line="72" column="38" lean-forward="true" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/redux/actions/types.js">
+    <entry file="file://$PROJECT_DIR$/client/src/components/profiles/Profiles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="348">
+          <caret line="45" column="70" lean-forward="true" selection-start-line="45" selection-start-column="70" selection-end-line="45" selection-end-column="70" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#43#82#0" expanded="true" />
+            <element signature="e#134#174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="892">
+          <caret line="90" column="40" lean-forward="true" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#43#82#0" expanded="true" />
+            <element signature="e#342#388#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/profiles/ProfileItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#43#82#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

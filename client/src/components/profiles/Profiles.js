@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
 
 // Components
 import Spinner from '../common/Spinner';
+import ProfileItem from './ProfileItem';
 
 // redux
 import { connect } from 'react-redux';
@@ -29,14 +30,23 @@ class Profiles extends Component {
     render() {
 
         const{ profiles, loading } = this.props.profile;
+
+        // Profile content
         let profileItems;
 
+        // Check if profile is null or loading, if so show a spinner gif
         if (profiles === null || loading) {
             profileItems = <Spinner />;
         } else {
+            // Check to see if there are profiles
             if(profiles.length > 0) {
-                profileItems = <h1>Profiles here</h1>
+                // Profiles are available so loop through the profiles and
+                // add a profileItem for each profile having the profile as property
+                profileItems = profiles.map((profile) => (
+                    <ProfileItem key={profile._id} profile={profile}/>
+                ))
             } else {
+                // There are no profiles to display
                 profileItems = <h4>No profiles found ...</h4>
             }
         }
