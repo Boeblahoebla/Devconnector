@@ -52,6 +52,25 @@ export const getCurrentProfile = () => dispatch => {
         }))
 };
 
+// Get the profile by handle
+export const getProfileByHandle = (handle) => dispatch => {
+    dispatch(setProfileLoading());
+
+    // Request to REST endpoint
+    axios.get(`/api/profile/handle/${handle}`)
+        .then(res => dispatch({
+            type: GET_PROFILE,
+            payload: res.data
+        }))
+        // if no profile yet,
+        // just dispatch GET_PROFILE with the payload of an empty object
+        .catch(err => dispatch({
+            type: GET_PROFILE,
+            payload: null
+        }))
+};
+
+
 // Add a new experience to the profile
 export const addExperienceAction = (expData, history) => dispatch => {
     axios
