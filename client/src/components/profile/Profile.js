@@ -24,7 +24,8 @@ import { getProfileByHandle } from '../../redux/actions/profileActions';
 class Profile extends Component {
 
     // Lifecycle method that runs when the component is about to render
-    // it gets the profile by its handle
+    // it gets the profile by its handle by reading the params of the router
+    // https://jaketrent.com/post/access-route-params-react-router-v4/
     componentDidMount() {
         if (this.props.match.params.handle) {
             this.props.getProfileByHandle(this.props.match.params.handle)

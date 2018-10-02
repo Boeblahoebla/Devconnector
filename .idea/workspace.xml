@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63b44a66-c0f0-4b49-9f00-29798cd8d194" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile/Profile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile/ProfileAbout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile/ProfileCreds.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile/ProfileGithub.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile/ProfileHeader.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/profileActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/profileActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Profile.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,7 +42,7 @@
           <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/components/App.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="25">
+                <state relative-caret-position="229">
                   <caret line="83" column="36" lean-forward="true" selection-start-line="83" selection-start-column="36" selection-end-line="83" selection-end-column="36" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
@@ -76,8 +70,8 @@
           <file leaf-file-name="Profile.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/src/components/profile/Profile.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="858">
-                  <caret line="61" column="73" lean-forward="true" selection-start-line="61" selection-start-column="73" selection-end-line="61" selection-end-column="73" />
+                <state relative-caret-position="153">
+                  <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#43#82#0" expanded="true" />
@@ -142,8 +136,8 @@
           <file leaf-file-name="Dashboard.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="892">
-                  <caret line="90" column="40" lean-forward="true" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
+                <state relative-caret-position="1139">
+                  <caret line="67" column="39" lean-forward="true" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#43#82#0" expanded="true" />
@@ -406,7 +400,7 @@
       <workItem from="1538136772363" duration="322000" />
       <workItem from="1538137175762" duration="8798000" />
       <workItem from="1538396185064" duration="7379000" />
-      <workItem from="1538465471576" duration="18030000" />
+      <workItem from="1538465471576" duration="18799000" />
     </task>
     <task id="LOCAL-00001" summary="Created user model&#10;-&gt; Created registration logic to users.js&#10;-&gt; Created login logic through username &amp; password&#10;-&gt; Created JSON web token&#10;-&gt; Added JWT strategy">
       <created>1537030166778</created>
@@ -702,14 +696,22 @@
       <option name="project" value="LOCAL" />
       <updated>1538487114722</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Added Profile, ProfileHeader, ProfileAbout, ProfileCreds and ProfileGithub (.js)&#10;-&gt; Profile connected to state through redux&#10;-&gt; Added getProfileByHandle action in profileActions.js&#10;-&gt; Added public route for Profile in App.js&#10;-&gt; Added ProfileHeader, ProfileAbout, ProfileCreds and ProfileGithub as placeholders">
+      <created>1538488486129</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1538488486129</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181437000" />
+    <option name="totallyTimeSpent" value="182206000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1290" y="0" width="2577" height="991" extended-state="1" />
+    <frame x="-1290" y="0" width="2577" height="991" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.089799136" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -785,7 +787,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Cleaned up some of the bloatfiles of create-react-app&#10;Already set up the project to use Bootstrap and React.&#10;Added all the dependencies in the index.html file&#10;Cleaned the boilerplate of the index.html file and some mor formatting" />
     <MESSAGE value="Created the landing page&#10;--&gt; Created and added the Navbar component&#10;--&gt; Created and added the Landing component&#10;--&gt; Created and added the Footer component" />
     <MESSAGE value="Created Register &amp; Login forms in the Register &amp; Login component&#10;Added axios as the library to add functionality to the REST api&#10;Added npm package classnames and error messages for invalid inputfields&#10;&#10;Register &amp; Login works&#10;-&gt; Submitting validated registration input creates a new user in the db&#10;-&gt; Submitting validated login input returns a JWT token (bearer)" />
     <MESSAGE value="Installed and added Redux&#10;-&gt; Created a store for Redux&#10;-&gt; .. Initial state&#10;-&gt; .. Middleware&#10;-&gt; .. Functionality to work with Redux devtools chrome extension&#10;-&gt; Added reducer for the authentication&#10;-&gt; .. Basic template showing the initial state.&#10;-&gt; .... No functionality as of yet&#10;&#10;Tested with Redux devtools chrome extension" />
@@ -810,7 +811,8 @@
     <MESSAGE value="Added a back-button on the edit profile component" />
     <MESSAGE value="Added Profiles.js to visualize the profiles as a public route&#10;-&gt; Connected with Redux along with its state&#10;Created the getProfiles action in profileActions&#10;Created the case for the profileReducer&#10;Added the route to App.js as a public route" />
     <MESSAGE value="Added ProfileItem.js to be displayed in the public component Profiles.js&#10;Profiles.js now displays all the profiles available in the database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added ProfileItem.js to be displayed in the public component Profiles.js&#10;Profiles.js now displays all the profiles available in the database" />
+    <MESSAGE value="Added Profile, ProfileHeader, ProfileAbout, ProfileCreds and ProfileGithub (.js)&#10;-&gt; Profile connected to state through redux&#10;-&gt; Added getProfileByHandle action in profileActions.js&#10;-&gt; Added public route for Profile in App.js&#10;-&gt; Added ProfileHeader, ProfileAbout, ProfileCreds and ProfileGithub as placeholders" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Profile, ProfileHeader, ProfileAbout, ProfileCreds and ProfileGithub (.js)&#10;-&gt; Profile connected to state through redux&#10;-&gt; Added getProfileByHandle action in profileActions.js&#10;-&gt; Added public route for Profile in App.js&#10;-&gt; Added ProfileHeader, ProfileAbout, ProfileCreds and ProfileGithub as placeholders" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1105,18 +1107,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="892">
-          <caret line="90" column="40" lean-forward="true" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#43#82#0" expanded="true" />
-            <element signature="e#342#388#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/profiles/ProfileItem.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1124,16 +1114,6 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#43#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/profile/ProfileHeader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1158,12 +1138,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/profile/ProfileAbout.js">
+    <entry file="file://$PROJECT_DIR$/client/src/components/profiles/Profiles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="-179">
+          <caret line="45" column="70" selection-start-line="45" selection-start-column="70" selection-end-line="45" selection-end-column="70" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#43#82#0" expanded="true" />
+            <element signature="e#134#174#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1180,7 +1162,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
+        <state relative-caret-position="229">
           <caret line="83" column="36" lean-forward="true" selection-start-line="83" selection-start-column="36" selection-end-line="83" selection-end-column="36" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -1190,22 +1172,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/profiles/Profiles.js">
+    <entry file="file://$PROJECT_DIR$/client/src/components/profile/ProfileHeader.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-179">
-          <caret line="45" column="70" selection-start-line="45" selection-start-column="70" selection-end-line="45" selection-end-column="70" />
+        <state relative-caret-position="238">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/profile/ProfileAbout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="67" column="39" lean-forward="true" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#43#82#0" expanded="true" />
-            <element signature="e#134#174#0" expanded="true" />
+            <element signature="e#342#388#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/profile/Profile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="61" column="73" lean-forward="true" selection-start-line="61" selection-start-column="73" selection-end-line="61" selection-end-column="73" />
+        <state relative-caret-position="153">
+          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#43#82#0" expanded="true" />
