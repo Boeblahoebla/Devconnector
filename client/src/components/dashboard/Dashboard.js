@@ -11,6 +11,8 @@ import { Link } from 'react-router-dom';
 
 // Components
 import ProfileActions from './ProfileActions';
+import Experience from './Experience';
+import Education from './Education';
 
 ////////////////
 // Component //
@@ -41,6 +43,8 @@ class Dashboard extends Component {
                     <div>
                         <p className="lead text-muted">Welcome <Link to={`/profile/${profile.handle}`}>{user.name}</Link></p>
                         <ProfileActions/>
+                        <Experience experience={profile.experience}/>
+                        <Education education={profile.education}/>
                         {/* TODO: experience & education*/}
                         <div style={{ marginBottom: '60px' }}>
                             <button onClick={this.onDeleteClick} className="btn btn-danger">Delete my account</button>

@@ -313,7 +313,9 @@ class CreateProfile extends Component {
     };
 
     // Called when clicking the Social Media toggler
-    toggleSocial = () => {
+    toggleSocial = (e) => {
+        e.preventDefault();
+
         this.setState(prevState => ({
             // Set boolean displaySocialInputs to inverse of its previous state
             displaySocialInputs: !prevState.displaySocialInputs

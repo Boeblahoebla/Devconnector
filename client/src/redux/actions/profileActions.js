@@ -57,8 +57,42 @@ export const addEducationAction = (eduData, history) => dispatch => {
         }))
 };
 
+// Delete an experience from the profile
+export const deleteExperience = (id) => dispatch => {
+    axios
+        .delete(`/api/profile/experience/${id}`)
+        .then(res => dispatch({
+            type: GET_PROFILE,
+            payload: res.data
+        }))
+        .catch(err => dispatch({
+            type: GET_ERRORS,
+            payload: err.response.data
+        }));
+
+    console.log(`${id} erased`);
+};
+
+// Delete an experience from the profile
+export const deleteEducation = (id) => dispatch => {
+    axios
+        .delete(`/api/profile/education/${id}`)
+        .then(res => dispatch({
+            type: GET_PROFILE,
+            payload: res.data
+        }))
+        .catch(err => dispatch({
+            type: GET_ERRORS,
+            payload: err.response.data
+        }));
+
+    console.log(`${id} erased`);
+};
+
+
+
 // Delete account and profile
-export const deleteAccount =() => dispatch => {
+export const deleteAccount = () => dispatch => {
     if(window.confirm('Are you sure you want to delete this account?')) {
         axios.delete('/api/profile')
             .then(res => dispatch({

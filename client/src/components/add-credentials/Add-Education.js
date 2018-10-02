@@ -103,7 +103,7 @@ class AddEducation extends Component {
                                 {/* To-date date field */}
                                 <h6>To date</h6>
                                 <TextFieldGroup
-                                    name="from"
+                                    name="to"
                                     type="date"
                                     value={ this.state.to }
                                     onChange={ this.onChange }
