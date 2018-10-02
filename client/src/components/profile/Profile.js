@@ -34,12 +34,45 @@ class Profile extends Component {
     }
 
     render() {
+
+        const { profile, loading } = this.props.profile;
+
+        // Profile content
+        let profileContent;
+
+        // Check if profile is null or loading, if so show a spinner gif
+        if(profile === null || loading) {
+            profileContent = <Spinner />
+        } else {
+            // Profiles is available so
+            // Fill the profileContent with a Header, Credentials, Github & About
+            profileContent = (
+                <div>
+                    <div className="row">
+                        <div className="col-md-6">
+                            <Link to="/profiles" className="btn btn-light mb-3 float-left">
+                                Back to profiles
+                            </Link>
+                        </div>
+                    </div>
+
+                    <ProfileHeader profile={profile}/>
+                    <ProfileCreds />
+                    <ProfileGithub/>
+                    <ProfileAbout/>
+                </div>
+            )
+        }
+
         return (
-            <div>
-                <ProfileHeader/>
-                <ProfileCreds/>
-                <ProfileGithub/>
-                <ProfileAbout/>
+            <div className="profile">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12">
+                            { profileContent }
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }
