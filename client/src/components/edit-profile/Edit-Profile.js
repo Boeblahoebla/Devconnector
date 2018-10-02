@@ -21,7 +21,7 @@ import { createProfileAction, getCurrentProfile } from '../../redux/actions/prof
 // Component //
 //////////////
 
-class CreateProfile extends Component {
+class EditProfile extends Component {
 
     // Constructor for the class
     constructor(props) {
@@ -326,7 +326,7 @@ class CreateProfile extends Component {
 }
 
 // Prop types of the component
-CreateProfile.propTypes = {
+EditProfile.propTypes = {
     getCurrentProfile: PropTypes.func.isRequired,
     createCurrentProfile: PropTypes.func.isRequired,
     profile: PropTypes.object.isRequired,
@@ -343,4 +343,4 @@ const mapStateToProps = (state) => ({
 // Exports //
 ////////////
 
-export default connect(mapStateToProps, { createProfileAction, getCurrentProfile })(withRouter(CreateProfile));
+export default connect(mapStateToProps, { createProfileAction, getCurrentProfile })(withRouter(EditProfile));
