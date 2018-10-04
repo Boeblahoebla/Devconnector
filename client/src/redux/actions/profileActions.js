@@ -19,8 +19,8 @@ export const createProfileAction = (profileData, history) => dispatch => {
 };
 
 // Get all profiles
-export const getProfiles = () => dispatch => {
-    dispatch(setProfileLoading());
+export const getProfilesAction = () => dispatch => {
+    dispatch(setProfileLoadingAction());
 
     axios
         .get('/api/profile/all')
@@ -35,8 +35,8 @@ export const getProfiles = () => dispatch => {
 };
 
 // Get the current profile
-export const getCurrentProfile = () => dispatch => {
-    dispatch(setProfileLoading());
+export const getCurrentProfileAction = () => dispatch => {
+    dispatch(setProfileLoadingAction());
 
     // Request to REST endpoint
     axios.get('/api/profile')
@@ -53,8 +53,8 @@ export const getCurrentProfile = () => dispatch => {
 };
 
 // Get the profile by handle
-export const getProfileByHandle = (handle) => dispatch => {
-    dispatch(setProfileLoading());
+export const getProfileByHandleAction = (handle) => dispatch => {
+    dispatch(setProfileLoadingAction());
 
     // Request to REST endpoint
     axios.get(`/api/profile/handle/${handle}`)
@@ -94,7 +94,7 @@ export const addEducationAction = (eduData, history) => dispatch => {
 };
 
 // Delete an experience from the profile
-export const deleteExperience = (id) => dispatch => {
+export const deleteExperienceAction = (id) => dispatch => {
     axios
         .delete(`/api/profile/experience/${id}`)
         .then(res => dispatch({
@@ -110,7 +110,7 @@ export const deleteExperience = (id) => dispatch => {
 };
 
 // Delete an experience from the profile
-export const deleteEducation = (id) => dispatch => {
+export const deleteEducationAction = (id) => dispatch => {
     axios
         .delete(`/api/profile/education/${id}`)
         .then(res => dispatch({
@@ -128,7 +128,7 @@ export const deleteEducation = (id) => dispatch => {
 
 
 // Delete account and profile
-export const deleteAccount = () => dispatch => {
+export const deleteAccountAction = () => dispatch => {
     if(window.confirm('Are you sure you want to delete this account?')) {
         axios.delete('/api/profile')
             .then(res => dispatch({
@@ -144,14 +144,14 @@ export const deleteAccount = () => dispatch => {
 };
 
 // Profile loading
-export const setProfileLoading = () => {
+export const setProfileLoadingAction = () => {
     return {
         type: PROFILE_LOADING
     }
 };
 
 // Clear profile
-export const clearCurrentProfile = () => {
+export const clearCurrentProfileAction = () => {
     return {
         type: CLEAR_CURRENT_PROFILE
     }

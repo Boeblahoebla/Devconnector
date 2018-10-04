@@ -19,6 +19,7 @@ import CreateProfile from './create-profile/CreateProfile';
 import EditProfile from './edit-profile/Edit-Profile';
 import Profiles from './profiles/Profiles';
 import Profile from './profile/Profile';
+import Posts from './posts/Posts';
 
 import AddExperience from '../components/add-credentials/Add-Experience';
 import AddEducation from '../components/add-credentials/Add-Education';
@@ -35,7 +36,7 @@ import jwt_decode from 'jwt-decode';
 import setAuthToken from '../utils/setAuthToken';
 import { setCurrentUser } from "../redux/actions/authActions";
 import { logOutUserAction } from "../redux/actions/authActions";
-import { clearCurrentProfile } from "../redux/actions/profileActions";
+import { clearCurrentProfileAction } from "../redux/actions/profileActions";
 
 // Styling
 import '../styles/App.css';
@@ -61,7 +62,7 @@ if (localStorage.jwtToken) {
 
         // Clear the current profile
 
-        fullApplicationStore.dispatch(clearCurrentProfile());
+        fullApplicationStore.dispatch(clearCurrentProfileAction());
 
         window.location.href = '/login';
     }
@@ -97,6 +98,9 @@ class App extends Component {
                             </Switch>
                             <Switch>
                                 <PrivateRoute exact path="/add-education" component={ AddEducation } />
+                            </Switch>
+                            <Switch>
+                                <PrivateRoute exact path="/feed" component={ Posts } />
                             </Switch>
                             <Route exact path="/not-found" component={ NotFound } />
                         </div>

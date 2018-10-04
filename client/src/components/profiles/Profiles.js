@@ -13,7 +13,7 @@ import ProfileItem from './ProfileItem';
 import { connect } from 'react-redux';
 
 // Actions
-import { getProfiles } from '../../redux/actions/profileActions';
+import { getProfilesAction } from '../../redux/actions/profileActions';
 
 ////////////////
 // Component //
@@ -85,4 +85,4 @@ const mapStateToProps = (state) => ({
 // Exports //
 ////////////
 
-export default connect(mapStateToProps, { getProfiles })(Profiles);
+export default connect(mapStateToProps, { getProfiles: getProfilesAction })(Profiles);

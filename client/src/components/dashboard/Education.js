@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'
 
 // Redux
 import { connect } from 'react-redux';
-import { deleteEducation } from '../../redux/actions/profileActions';
+import { deleteEducationAction } from '../../redux/actions/profileActions';
 
 // Misc
 import Moment from 'react-moment';
@@ -74,4 +74,4 @@ Education.propTypes = {
 // Exports //
 ////////////
 
-export default connect(null, { deleteEducation })(Education);
+export default connect(null, { deleteEducation: deleteEducationAction })(Education);

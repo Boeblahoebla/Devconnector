@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 
 // Redux
 import { connect } from 'react-redux';
-import { deleteExperience } from '../../redux/actions/profileActions';
+import { deleteExperienceAction } from '../../redux/actions/profileActions';
 
 // Misc
 import Moment from 'react-moment';
@@ -74,4 +74,4 @@ Experience.propTypes = {
 // Exports //
 ////////////
 
-export default connect(null,{ deleteExperience })(Experience);
+export default connect(null,{ deleteExperience: deleteExperienceAction })(Experience);

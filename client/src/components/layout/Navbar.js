@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import { logOutUserAction } from "../../redux/actions/authActions";
-import { clearCurrentProfile } from "../../redux/actions/profileActions";
+import { clearCurrentProfileAction } from "../../redux/actions/profileActions";
 
 ////////////////
 // Component //
@@ -29,7 +29,7 @@ class NavBar extends Component {
         const authLinks = (
             <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                    <Link className="nav-link" to="feed.html">
+                    <Link className="nav-link" to="/feed">
                         Post Feed
                     </Link>
                 </li>
@@ -104,4 +104,4 @@ const mapStateToProps = (state) => ({
     auth: state.auth
 });
 
-export default connect(mapStateToProps,{ logOutUserAction, clearCurrentProfile })(NavBar);
+export default connect(mapStateToProps,{ logOutUserAction, clearCurrentProfile: clearCurrentProfileAction })(NavBar);

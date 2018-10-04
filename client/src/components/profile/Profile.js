@@ -15,7 +15,7 @@ import ProfileGithub from './ProfileGithub';
 import ProfileHeader from './ProfileHeader';
 
 // Actions
-import { getProfileByHandle } from '../../redux/actions/profileActions';
+import { getProfileByHandleAction } from '../../redux/actions/profileActions';
 
 ////////////////
 // Component //
@@ -105,4 +105,4 @@ const mapStateToProps = (state) => ({
 // Exports //
 ////////////
 
-export default connect(mapStateToProps, { getProfileByHandle })(Profile);
+export default connect(mapStateToProps, { getProfileByHandle: getProfileByHandleAction })(Profile);

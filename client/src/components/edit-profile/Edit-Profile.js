@@ -15,7 +15,7 @@ import SelectListGroup from '../common/SelectListGroup';
 import InputGroup from '../common/InputGroup';
 
 // Actions
-import { createProfileAction, getCurrentProfile } from '../../redux/actions/profileActions';
+import { createProfileAction, getCurrentProfileAction } from '../../redux/actions/profileActions';
 
 ////////////////
 // Component //
@@ -343,4 +343,4 @@ const mapStateToProps = (state) => ({
 // Exports //
 ////////////
 
-export default connect(mapStateToProps, { createProfileAction, getCurrentProfile })(withRouter(EditProfile));
+export default connect(mapStateToProps, { createProfileAction, getCurrentProfile: getCurrentProfileAction })(withRouter(EditProfile));

@@ -2,7 +2,7 @@ import axios from 'axios';
 import {ADD_POST, GET_ERRORS} from './types';
 
 // Add a post
-export const addPost = postData => dispatch => {
+export const addPostAction = postData => dispatch => {
     axios
         .post('/api/posts', postData)
         .then(res => dispatch ({

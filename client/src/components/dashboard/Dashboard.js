@@ -5,7 +5,7 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { getCurrentProfile, deleteAccount } from "../../redux/actions/profileActions";
+import { getCurrentProfileAction, deleteAccountAction } from "../../redux/actions/profileActions";
 import Spinner from '../common/Spinner';
 import { Link } from 'react-router-dom';
 
@@ -106,4 +106,4 @@ const mapStateToProps = state => ({
 // Exports //
 ////////////
 
-export default connect(mapStateToProps, { getCurrentProfile, deleteAccount })(Dashboard);
+export default connect(mapStateToProps, { getCurrentProfile: getCurrentProfileAction, deleteAccount: deleteAccountAction })(Dashboard);
