@@ -6,6 +6,7 @@ import { combineReducers } from 'redux';
 import authReducer from './authReducer';
 import errorsReducer from "./errorsReducer";
 import profileReducer from "./profileReducer";
+import postReducer from './postReducer';
 
 //////////////
 // Exports //
@@ -19,5 +20,6 @@ export default combineReducers({
     //    when it gets dispatched by an action that produces errors
     auth: authReducer,
     errors: errorsReducer,
-    profile: profileReducer
+    profile: profileReducer,
+    post: postReducer
 });
