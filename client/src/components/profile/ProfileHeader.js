@@ -3,7 +3,7 @@
 ////////////
 
 import React, {Component} from 'react';
-import isEmpty from "../../validation/is-empty";
+import isEmpty from '../../validation/is-empty';
 
 ////////////////
 // Component //
@@ -14,7 +14,6 @@ class ProfileHeader extends Component {
 
         // Get the profile from the props
         const { profile } = this.props;
-
 
         return (
             <div className="row">
@@ -28,19 +27,23 @@ class ProfileHeader extends Component {
                             </div>
                         </div>
                         <div className="text-center">
+
                             {/* Profile name */}
                             <h1 className="display-4 text-center">{profile.user.name}</h1>
 
                             {/* Profile status (& company if available) */}
-                            <p className="lead text-center">{profile.status} {isEmpty(profile.company)
-                                ? null
-                                : (<span>at {profile.company}</span>)}
+                            <p className="lead text-center">{profile.status} {isEmpty(profile.company) ? null : (
+                                <span>
+                                    at {profile.company}
+                                </span>)}
                             </p>
 
                             {/* Profile location if available */}
-                            {isEmpty(profile.location)
-                                ? null
-                                : (<p>at {profile.location}</p>)}
+                            {isEmpty(profile.location) ? null : (
+                                <p>
+                                    at {profile.location}
+                                </p>
+                            )}
 
                             {/* Website & social media links if available */}
                             <p>
@@ -90,7 +93,7 @@ class ProfileHeader extends Component {
                                         className="text-white p-2"
                                         href={ profile.social.youtube }
                                         target="_blank" >
-                                        <i className="fas fa-youtube fa-2x"></i>
+                                        <i className="fab fa-youtube fa-2x"></i>
                                     </a>
                                 )}
 

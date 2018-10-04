@@ -41,7 +41,7 @@ class Profiles extends Component {
             // Check to see if there are profiles
             if(profiles.length > 0) {
                 // Profiles are available so loop through the profiles and
-                // add a profileItem for each profile having the profile as property
+                // add a profileItem component for each profile passing the profile as property
                 profileItems = profiles.map((profile) => (
                     <ProfileItem key={profile._id} profile={profile}/>
                 ))

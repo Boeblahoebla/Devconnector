@@ -29,7 +29,6 @@ class Profile extends Component {
     componentDidMount() {
         if (this.props.match.params.handle) {
             this.props.getProfileByHandle(this.props.match.params.handle)
-
         }
     }
 
@@ -48,18 +47,10 @@ class Profile extends Component {
             // Fill the profileContent with a Header, Credentials, Github & About
             profileContent = (
                 <div>
-                    <div className="row">
-                        <div className="col-md-6">
-                            <Link to="/profiles" className="btn btn-light mb-3 float-left">
-                                Back to profiles
-                            </Link>
-                        </div>
-                    </div>
-
-                    <ProfileHeader profile={profile}/>
-                    <ProfileCreds />
+                    <ProfileHeader profile={ profile }/>
+                    <ProfileAbout profile={ profile }/>
+                    <ProfileCreds/>
                     <ProfileGithub/>
-                    <ProfileAbout/>
                 </div>
             )
         }
@@ -69,6 +60,17 @@ class Profile extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
+                            <div className="row">
+                                <div className="col-md-6">
+
+                                    {/* Link to go back to profiles */}
+                                    <Link to="/profiles" className="btn btn-light mb-3 float-left">
+                                        Back to profiles
+                                    </Link>
+                                </div>
+                            </div>
+
+                            {/* The actual profile content */}
                             { profileContent }
                         </div>
                     </div>
