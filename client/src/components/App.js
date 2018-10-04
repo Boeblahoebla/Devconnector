@@ -23,6 +23,8 @@ import Profile from './profile/Profile';
 import AddExperience from '../components/add-credentials/Add-Experience';
 import AddEducation from '../components/add-credentials/Add-Education';
 
+import NotFound from '../components/not-found/NotFound';
+
 import PrivateRoute from'./common/PrivateRoute';
 
 // Redux
@@ -96,6 +98,7 @@ class App extends Component {
                             <Switch>
                                 <PrivateRoute exact path="/add-education" component={ AddEducation } />
                             </Switch>
+                            <Route exact path="/not-found" component={ NotFound } />
                         </div>
 
                         <Footer />
