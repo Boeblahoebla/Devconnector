@@ -1,4 +1,5 @@
 /node_modules
 /client/node_modules
 /devconnector_theme
+/config/keys_dev.js
 package-log.json
