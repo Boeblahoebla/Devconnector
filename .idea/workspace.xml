@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/posts/PostItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/posts/PostItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/redux/actions/postActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/postActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/reducers/postReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/reducers/postReducer.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,8 +31,8 @@
           <file leaf-file-name="Dashboard.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="986">
-                  <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
+                <state relative-caret-position="493">
+                  <caret line="71" column="65" selection-start-line="71" selection-start-column="65" selection-end-line="71" selection-end-column="65" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#43#82#0" expanded="true" />
@@ -42,11 +41,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="postActions.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="postActions.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/src/redux/actions/postActions.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="697">
-                  <caret line="41" column="38" lean-forward="true" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
+                <state relative-caret-position="59">
+                  <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -103,11 +102,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="PostItem.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="PostItem.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/components/posts/PostItem.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+                <state relative-caret-position="317">
+                  <caret line="107" column="2" lean-forward="true" selection-start-line="107" selection-start-column="2" selection-end-line="107" selection-end-column="2" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#43#82#0" expanded="true" />
@@ -210,8 +209,8 @@
         <option value="$PROJECT_DIR$/client/src/redux/actions/types.js" />
         <option value="$PROJECT_DIR$/client/src/components/posts/Posts.js" />
         <option value="$PROJECT_DIR$/client/src/components/posts/PostFeed.js" />
-        <option value="$PROJECT_DIR$/client/src/redux/actions/postActions.js" />
         <option value="$PROJECT_DIR$/client/src/redux/reducers/postReducer.js" />
+        <option value="$PROJECT_DIR$/client/src/redux/actions/postActions.js" />
         <option value="$PROJECT_DIR$/client/src/components/posts/PostItem.js" />
       </list>
     </option>
@@ -437,14 +436,7 @@
       <workItem from="1538465471576" duration="22323000" />
       <workItem from="1538549721151" duration="747000" />
       <workItem from="1538636060894" duration="24964000" />
-      <workItem from="1538723414852" duration="2569000" />
-    </task>
-    <task id="LOCAL-00004" summary="Crated the Profile MongoDB schema">
-      <created>1537104453730</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1537104453730</updated>
+      <workItem from="1538723414852" duration="3975000" />
     </task>
     <task id="LOCAL-00005" summary="fixed some typo's in the mongoDB Profile schema">
       <created>1537104579374</created>
@@ -782,14 +774,22 @@
       <option name="project" value="LOCAL" />
       <updated>1538723619855</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Added the delete post functionality&#10;-&gt; Created an action deletePostAction in postActions.js&#10;-&gt; Created a case in de postReducer which handles the DELETE_POST action&#10;-&gt; Added the deletePostAction to the PostItems component&#10;-&gt; .. As callable action&#10;-&gt; .. As prop&#10;-&gt; Added the code to delete a post to the onDeleteClick method of PostItem.js">
+      <created>1538727152421</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1538727152421</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214010000" />
+    <option name="totallyTimeSpent" value="215416000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1290" y="0" width="2577" height="991" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.089799136" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -866,7 +866,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created the dashboard component which holds the user's profile&#10;-&gt; Created a route for the dashboard component&#10;-&gt; Created the profile action types in ./src/redux/actions/types.js&#10;-&gt; Created profileActions which uses the new action types&#10;-&gt; Created a reducer for the profiles&#10;-&gt; Connected the dashboard component with redux and the profileActions&#10;Clicking the logout button in the navbar now clears the profile" />
     <MESSAGE value="Created a spinner component&#10;Started on the dashboard component&#10;-&gt; Added a check if the profile is null or loading&#10;-&gt; .. If loading the spinner now shows&#10;-&gt; If the profile is not empty a header shows with profile username&#10;-&gt; If the profile is empty a welcome message appears prompting the user to create a profile" />
     <MESSAGE value="Added a private route component which receives minimum 2 props&#10;-&gt; the component to go to&#10;-&gt; authentication info&#10;-&gt; .. If authenticated then the component as a prop gets rendered&#10;-&gt; .. If not authenticated the private route component redirects to /login&#10;&#10;Imported and used Switch in App.js and enclosed the PrivateRoute- component to the dashboard inside &lt;Switch&gt;&lt;/Switch&gt; tags to ensure the redirection works on this private route&#10;&#10;Check https://tylermcginnis.com/react-router-protected-routes-authentication/ for more information" />
     <MESSAGE value="Created the CreateProfile component and added it to App.js as private route&#10;-&gt; Created the proptypes for this component&#10;-&gt; Created the function mapStateToProps&#10;-&gt; Connected CreateProfile to redux store with mapStateToProps" />
@@ -891,7 +890,8 @@
     <MESSAGE value="REDUX: Created reducer and actions for the Posts functionality&#10;-&gt; Added the post-related action types&#10;-&gt; Created boilerplate for postReducer with a default action, returning the state&#10;-&gt; Added the postReducer to the combineReducer method in ./redux/reducers/index.js&#10;-&gt; Created an addPost action in postActions.js to start creating our first posts" />
     <MESSAGE value="Created the case for the action type being ADD_POST in the postReducer&#10;Created the component to add a post with route ./feed&#10;-&gt; Connected to redux&#10;-&gt; mapped state to props&#10;-&gt; Added a navbar link to go to the feed&#10;&#10;Renamed all the actions in the redux/actions folder to having a suffix Action&#10;e.g. addPostAction to have a clear name pointing to a Redux action" />
     <MESSAGE value="Added PostFeed to Posts.js with the posts of each profile&#10;-&gt; When creating a post, the post automatically shows in the feed&#10;-&gt; Functionality for each post now shows alongside each post in the feed&#10;-&gt; .. Delete functionality only available for own posts&#10;-&gt; .. Like, dislike &amp; comment functionality available for every logged in account" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added PostFeed to Posts.js with the posts of each profile&#10;-&gt; When creating a post, the post automatically shows in the feed&#10;-&gt; Functionality for each post now shows alongside each post in the feed&#10;-&gt; .. Delete functionality only available for own posts&#10;-&gt; .. Like, dislike &amp; comment functionality available for every logged in account" />
+    <MESSAGE value="Added the delete post functionality&#10;-&gt; Created an action deletePostAction in postActions.js&#10;-&gt; Created a case in de postReducer which handles the DELETE_POST action&#10;-&gt; Added the deletePostAction to the PostItems component&#10;-&gt; .. As callable action&#10;-&gt; .. As prop&#10;-&gt; Added the code to delete a post to the onDeleteClick method of PostItem.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the delete post functionality&#10;-&gt; Created an action deletePostAction in postActions.js&#10;-&gt; Created a case in de postReducer which handles the DELETE_POST action&#10;-&gt; Added the deletePostAction to the PostItems component&#10;-&gt; .. As callable action&#10;-&gt; .. As prop&#10;-&gt; Added the code to delete a post to the onDeleteClick method of PostItem.js" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1251,17 +1251,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#43#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/devconnector_theme/feed.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -1279,16 +1268,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/redux/actions/postActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="38" lean-forward="true" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/redux/reducers/postReducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
@@ -1299,14 +1278,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="71" column="65" selection-start-line="71" selection-start-column="65" selection-end-line="71" selection-end-column="65" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#43#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/posts/PostItem.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+        <state relative-caret-position="317">
+          <caret line="107" column="2" lean-forward="true" selection-start-line="107" selection-start-column="2" selection-end-line="107" selection-end-column="2" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#43#82#0" expanded="true" />
             <element signature="e#206#243#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/redux/actions/postActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -114,10 +114,10 @@ router.post('/like/:id', passport.authenticate('jwt', { session: false }), (req,
         })
 });
 
-// @route   DELETE api/posts/unlike/:id ... :id being the "post- id", NOT the "like- id"
+// @route   POST api/posts/unlike/:id ... :id being the "post- id", NOT the "like- id"
 // @desc    Unlike a post
 // @access  Private
-router.delete('/unlike/:id', passport.authenticate('jwt', { session: false }), (req, res) => {
+router.post('/unlike/:id', passport.authenticate('jwt', { session: false }), (req, res) => {
     Profile.findOne({ user: req.user.id })
         .then((profile) => {
             Post.findById(req.params.id)
@@ -132,7 +132,7 @@ router.delete('/unlike/:id', passport.authenticate('jwt', { session: false }), (
                     const removeIndex = post.likes.map(items => items.user.toString).indexOf(req.user.id);
 
                     // Remove the item at the index to remove
-                    post.likes.splice(removeIndex, 1);;
+                    post.likes.splice(removeIndex, 1);
 
                     //
                     post.save().then(post => res.json(post));

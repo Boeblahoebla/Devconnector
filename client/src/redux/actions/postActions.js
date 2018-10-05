@@ -14,6 +14,28 @@ export const addPostAction = postData => dispatch => {
         }))
 };
 
+// Add a like to a post
+export const addLikeAction = id => dispatch => {
+    axios
+        .post(`/api/posts/like/${id}`)
+        .then(res => dispatch (getPostsAction()))
+        .catch(err => dispatch({
+            type: GET_ERRORS,
+            payload: err.response.data
+        }))
+};
+
+// Add a like to a post
+export const removeLikeAction = id => dispatch => {
+    axios
+        .post(`/api/posts/unlike/${id}`)
+        .then(res => dispatch (getPostsAction()))
+        .catch(err => dispatch({
+            type: GET_ERRORS,
+            payload: err.response.data
+        }))
+};
+
 // Get Posts
 export const getPostsAction = () => dispatch => {
 

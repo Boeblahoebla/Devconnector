@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 // Redux
 import { connect } from 'react-redux'
 
-import { deletePostAction } from "../../redux/actions/postActions";
+import { deletePostAction, addLikeAction, removeLikeAction } from "../../redux/actions/postActions";
 
 
 ////////////////
@@ -50,13 +50,13 @@ class PostItem extends Component {
                         </p>
 
                         {/* Likes button & counter */}
-                        <button type="button" className="btn btn-light mr-1">
+                        <button type="button" onClick={this.onLikeClick.bind(this, post._id)} className="btn btn-light mr-1">
                             <i className="text-info fas fa-thumbs-up"/>
                             <span className="badge badge-light">{post.likes.length}</span>
                         </button>
 
                         {/* Dislikes button & counter */}
-                        <button type="button" className="btn btn-light mr-1">
+                        <button type="button" onClick={this.onUnlikeClick.bind(this, post._id)} className="btn btn-light mr-1">
                             <i className="text-secondary fas fa-thumbs-down"/>
                         </button>
 
@@ -83,11 +83,25 @@ class PostItem extends Component {
     // Method to delete a post
     onDeleteClick = (id) => {
         this.props.deletePostAction(id);
-    }
+    };
+
+
+    // Method to like a post
+    onLikeClick = (id) => {
+        this.props.addLikeAction(id);
+    };
+
+
+    // Method to unlike a post
+    onUnlikeClick = (id) => {
+        this.props.removeLikeAction(id);
+    };
 }
 
 // Proptypes for the component
 PostItem.propTypes = {
+    addLikeAction: PropTypes.func.isRequired,
+    removeLikeAction: PropTypes.func.isRequired,
     deletePostAction: PropTypes.func.isRequired,
     post: PropTypes.object.isRequired,
     auth: PropTypes.object.isRequired
@@ -95,11 +109,12 @@ PostItem.propTypes = {
 
 // Map the state the props
 const mapStateToProps = (state) => ({
-    auth: state.auth
+    auth: state.auth,
+    errors: state.error
 });
 
 //////////////
 // Exports //
 ////////////
 
-export default connect(mapStateToProps, { deletePostAction })(PostItem);
+export default connect(mapStateToProps, { deletePostAction, addLikeAction, removeLikeAction })(PostItem);
