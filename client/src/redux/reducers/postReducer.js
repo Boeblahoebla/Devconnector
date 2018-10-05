@@ -2,7 +2,7 @@
 // Imports //
 ////////////
 
-import { ADD_POST } from '../actions/types';
+import { ADD_POST, GET_POSTS, POSTS_LOADING } from '../actions/types';
 
 // Create the initial state
 const initialState = {
@@ -13,6 +13,17 @@ const initialState = {
 
 export default function(state = initialState, action) {
     switch (action.type){
+        case POSTS_LOADING:
+            return {
+                ...state,
+                loading: true
+            };
+        case GET_POSTS:
+            return {
+                ...state,
+                posts:action.payload,
+                loading: false
+            };
         case ADD_POST:
             return {
                 ...state,
