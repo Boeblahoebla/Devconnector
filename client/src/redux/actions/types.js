@@ -5,6 +5,9 @@ export const GET_ERRORS = 'GET_ERRORS';
 // Login, register & auth
 export const SET_CURRENT_USER = 'SET_CURRENT_USER';
 
+// Common
+export const CLEAR_ERRORS = 'CLEAR_ERRORS';
+
 // Profile related
 export const GET_PROFILE = 'GET_PROFILE';
 export const GET_PROFILES = 'GET_PROFILES';
