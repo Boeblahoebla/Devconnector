@@ -7,7 +7,6 @@
     <list default="true" id="63b44a66-c0f0-4b49-9f00-29798cd8d194" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/posts/PostItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/posts/PostItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/postActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/postActions.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,11 +40,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="postActions.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="postActions.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/redux/actions/postActions.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="59">
-                  <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+                <state relative-caret-position="586">
+                  <caret line="49" column="28" lean-forward="true" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -102,11 +101,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="PostItem.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="PostItem.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/src/components/posts/PostItem.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="317">
-                  <caret line="107" column="2" lean-forward="true" selection-start-line="107" selection-start-column="2" selection-end-line="107" selection-end-column="2" />
+                <state relative-caret-position="-340">
+                  <caret line="56" column="30" lean-forward="true" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#43#82#0" expanded="true" />
@@ -123,7 +122,7 @@
           <file leaf-file-name="profileActions.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/src/redux/actions/profileActions.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
+                <state relative-caret-position="-204">
                   <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
@@ -161,7 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/src/reducers/index.js" />
         <option value="$PROJECT_DIR$/client/src/store.js" />
         <option value="$PROJECT_DIR$/client/src/reducers/authReducer.js" />
         <option value="$PROJECT_DIR$/client/src/actions/authActions.js" />
@@ -211,6 +209,7 @@
         <option value="$PROJECT_DIR$/client/src/components/posts/PostFeed.js" />
         <option value="$PROJECT_DIR$/client/src/redux/reducers/postReducer.js" />
         <option value="$PROJECT_DIR$/client/src/redux/actions/postActions.js" />
+        <option value="$PROJECT_DIR$/routes/api/posts.js" />
         <option value="$PROJECT_DIR$/client/src/components/posts/PostItem.js" />
       </list>
     </option>
@@ -258,95 +257,6 @@
             <path>
               <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="Web-developer_22_FullStack-MERN-app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web-developer_22_FullStack-MERN-app" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web-developer_22_FullStack-MERN-app" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web-developer_22_FullStack-MERN-app" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web-developer_22_FullStack-MERN-app" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="add-credentials" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web-developer_22_FullStack-MERN-app" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web-developer_22_FullStack-MERN-app" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web-developer_22_FullStack-MERN-app" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web-developer_22_FullStack-MERN-app" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="posts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web-developer_22_FullStack-MERN-app" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="profiles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web-developer_22_FullStack-MERN-app" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="redux" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web-developer_22_FullStack-MERN-app" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="redux" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web-developer_22_FullStack-MERN-app" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="redux" type="462c0819:PsiDirectoryNode" />
-              <item name="reducers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Web-developer_22_FullStack-MERN-app" type="b2602c69:ProjectViewProjectNode" />
@@ -436,14 +346,7 @@
       <workItem from="1538465471576" duration="22323000" />
       <workItem from="1538549721151" duration="747000" />
       <workItem from="1538636060894" duration="24964000" />
-      <workItem from="1538723414852" duration="3975000" />
-    </task>
-    <task id="LOCAL-00005" summary="fixed some typo's in the mongoDB Profile schema">
-      <created>1537104579374</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1537104579374</updated>
+      <workItem from="1538723414852" duration="5029000" />
     </task>
     <task id="LOCAL-00006" summary="fixed some typo's in the mongoDB Profile schema">
       <created>1537104606629</created>
@@ -781,11 +684,18 @@
       <option name="project" value="LOCAL" />
       <updated>1538727152421</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Added functionality to like &amp; dislike a post.&#10;-&gt; Added 2 actions in postActions.js&#10;-&gt; .. addLikeAction&#10;-&gt; .. removeLikeAction&#10;-&gt; Added the 2 actions to PostItem.js to be used in the component&#10;-&gt; Added 2 methods to PostItem.js to respond to posting &amp; removing like buttons&#10;-&gt; .. Through redux ok&#10;&#10;Fixed a bug in the backend&#10;-&gt; changed the remove like RESTful route from a delete to a post request">
+      <created>1538728594881</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1538728594881</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="215416000" />
+    <option name="totallyTimeSpent" value="216470000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1290" y="0" width="2577" height="991" extended-state="0" />
@@ -866,7 +776,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created a spinner component&#10;Started on the dashboard component&#10;-&gt; Added a check if the profile is null or loading&#10;-&gt; .. If loading the spinner now shows&#10;-&gt; If the profile is not empty a header shows with profile username&#10;-&gt; If the profile is empty a welcome message appears prompting the user to create a profile" />
     <MESSAGE value="Added a private route component which receives minimum 2 props&#10;-&gt; the component to go to&#10;-&gt; authentication info&#10;-&gt; .. If authenticated then the component as a prop gets rendered&#10;-&gt; .. If not authenticated the private route component redirects to /login&#10;&#10;Imported and used Switch in App.js and enclosed the PrivateRoute- component to the dashboard inside &lt;Switch&gt;&lt;/Switch&gt; tags to ensure the redirection works on this private route&#10;&#10;Check https://tylermcginnis.com/react-router-protected-routes-authentication/ for more information" />
     <MESSAGE value="Created the CreateProfile component and added it to App.js as private route&#10;-&gt; Created the proptypes for this component&#10;-&gt; Created the function mapStateToProps&#10;-&gt; Connected CreateProfile to redux store with mapStateToProps" />
     <MESSAGE value="Created 3 components which will be reused throughout the project&#10;-&gt; TextAreaFieldGroup&#10;-&gt; SelectListGroup&#10;-&gt; InputGroup&#10;&#10;Added them as imports in CreateProfile.js where they will be used extensively" />
@@ -891,7 +800,8 @@
     <MESSAGE value="Created the case for the action type being ADD_POST in the postReducer&#10;Created the component to add a post with route ./feed&#10;-&gt; Connected to redux&#10;-&gt; mapped state to props&#10;-&gt; Added a navbar link to go to the feed&#10;&#10;Renamed all the actions in the redux/actions folder to having a suffix Action&#10;e.g. addPostAction to have a clear name pointing to a Redux action" />
     <MESSAGE value="Added PostFeed to Posts.js with the posts of each profile&#10;-&gt; When creating a post, the post automatically shows in the feed&#10;-&gt; Functionality for each post now shows alongside each post in the feed&#10;-&gt; .. Delete functionality only available for own posts&#10;-&gt; .. Like, dislike &amp; comment functionality available for every logged in account" />
     <MESSAGE value="Added the delete post functionality&#10;-&gt; Created an action deletePostAction in postActions.js&#10;-&gt; Created a case in de postReducer which handles the DELETE_POST action&#10;-&gt; Added the deletePostAction to the PostItems component&#10;-&gt; .. As callable action&#10;-&gt; .. As prop&#10;-&gt; Added the code to delete a post to the onDeleteClick method of PostItem.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the delete post functionality&#10;-&gt; Created an action deletePostAction in postActions.js&#10;-&gt; Created a case in de postReducer which handles the DELETE_POST action&#10;-&gt; Added the deletePostAction to the PostItems component&#10;-&gt; .. As callable action&#10;-&gt; .. As prop&#10;-&gt; Added the code to delete a post to the onDeleteClick method of PostItem.js" />
+    <MESSAGE value="Added functionality to like &amp; dislike a post.&#10;-&gt; Added 2 actions in postActions.js&#10;-&gt; .. addLikeAction&#10;-&gt; .. removeLikeAction&#10;-&gt; Added the 2 actions to PostItem.js to be used in the component&#10;-&gt; Added 2 methods to PostItem.js to respond to posting &amp; removing like buttons&#10;-&gt; .. Through redux ok&#10;&#10;Fixed a bug in the backend&#10;-&gt; changed the remove like RESTful route from a delete to a post request" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added functionality to like &amp; dislike a post.&#10;-&gt; Added 2 actions in postActions.js&#10;-&gt; .. addLikeAction&#10;-&gt; .. removeLikeAction&#10;-&gt; Added the 2 actions to PostItem.js to be used in the component&#10;-&gt; Added 2 methods to PostItem.js to respond to posting &amp; removing like buttons&#10;-&gt; .. Through redux ok&#10;&#10;Fixed a bug in the backend&#10;-&gt; changed the remove like RESTful route from a delete to a post request" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -899,17 +809,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/src/components/common/PrivateRoute.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#52#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/auth/Login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1260,7 +1159,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/redux/actions/profileActions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="-204">
           <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -1289,24 +1188,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/posts/PostItem.js">
+    <entry file="file://$PROJECT_DIR$/routes/api/posts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="107" column="2" lean-forward="true" selection-start-line="107" selection-start-column="2" selection-end-line="107" selection-end-column="2" />
+        <state relative-caret-position="306">
+          <caret line="114" column="3" lean-forward="true" selection-start-line="114" selection-start-column="3" selection-end-line="114" selection-end-column="3" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#43#82#0" expanded="true" />
-            <element signature="e#206#243#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/redux/actions/postActions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        <state relative-caret-position="586">
+          <caret line="49" column="28" lean-forward="true" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/posts/PostItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-340">
+          <caret line="56" column="30" lean-forward="true" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#43#82#0" expanded="true" />
+            <element signature="e#206#243#0" expanded="true" />
           </folding>
         </state>
       </provider>

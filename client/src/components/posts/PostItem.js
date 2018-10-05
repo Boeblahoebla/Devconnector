@@ -51,7 +51,11 @@ class PostItem extends Component {
 
                         {/* Likes button & counter */}
                         <button type="button" onClick={this.onLikeClick.bind(this, post._id)} className="btn btn-light mr-1">
-                            <i className="text-info fas fa-thumbs-up"/>
+
+                            <i className={classnames('fas fa-thumbs-up', {
+                                'text-info': this.findUserLike(post.likes)})}
+                            />
+
                             <span className="badge badge-light">{post.likes.length}</span>
                         </button>
 
@@ -96,6 +100,17 @@ class PostItem extends Component {
     onUnlikeClick = (id) => {
         this.props.removeLikeAction(id);
     };
+
+    // Check to see if a user already liked a post
+    findUserLike = (likes) => {
+        const { auth } = this.props;
+        if(likes.filter(like => like.user === auth.user.id).length > 0) {
+            // User has liked it
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
 
 // Proptypes for the component
