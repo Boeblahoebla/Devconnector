@@ -42,9 +42,15 @@ class PostForm extends Component {
         // Create a new post object using the state & the fetched user information
         const newPost = {
             text: this.state.text,
-            user: user.name,
-            avatar: user.avatar
+            user: user._id,
+            name: user.name,
+            avatar: user.avatar,
         };
+
+        //TODO: debugging of the handle to make the avatars in the post section click able
+
+        console.log('username = ', user);
+        console.log(newPost);
 
         // Fire up the addPostAction action to add the post to the DB
         this.props.addPost(newPost);
