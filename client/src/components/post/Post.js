@@ -14,6 +14,7 @@ import { getSinglePostAction } from '../../redux/actions/postActions';
 // Components
 import Spinner from '../common/Spinner';
 import PostItem from '../posts/PostItem';
+import CommentForm from './CommentForm';
 
 ////////////////
 // Component //
@@ -42,6 +43,7 @@ class Post extends Component {
             postContent = (
                 <div>
                     <PostItem post={post} showActions={false}/>
+                    <CommentForm postId={post._id} />
                 </div>
             )
         }

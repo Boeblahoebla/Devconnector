@@ -14,6 +14,19 @@ export const addPostAction = postData => dispatch => {
         }))
 };
 
+// Add a comment
+export const addCommentAction = (postId, commentData) => dispatch => {
+    axios
+        .post(`/api/posts/comment/${postId}`, commentData)
+        .then(res => dispatch ({
+            type: GET_POST,
+            payload: res.data}))
+        .catch(err => dispatch({
+            type: GET_ERRORS,
+            payload: err.response.data
+        }))
+};
+
 // Add a like to a post
 export const addLikeAction = id => dispatch => {
     axios
