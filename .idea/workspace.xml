@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63b44a66-c0f0-4b49-9f00-29798cd8d194" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/posts/PostFeed.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/posts/PostItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/posts/Posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/posts/Posts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/posts/PostItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/posts/PostItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/redux/actions/postActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/postActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/types.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/redux/reducers/postReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/reducers/postReducer.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -31,11 +28,11 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.4456945">
       <split-first>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="Dashboard.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-176">
+                <state relative-caret-position="986">
                   <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
@@ -48,8 +45,8 @@
           <file leaf-file-name="postActions.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/redux/actions/postActions.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
-                  <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+                <state relative-caret-position="697">
+                  <caret line="41" column="38" lean-forward="true" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -61,7 +58,7 @@
             <entry file="file://$PROJECT_DIR$/client/src/redux/actions/types.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="357">
-                  <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+                  <caret line="22" selection-start-line="22" selection-end-line="22" />
                 </state>
               </provider>
             </entry>
@@ -69,8 +66,8 @@
           <file leaf-file-name="postReducer.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/redux/reducers/postReducer.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+                <state relative-caret-position="484">
+                  <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -81,8 +78,8 @@
           <file leaf-file-name="Posts.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/components/posts/Posts.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="348">
-                  <caret line="60" column="2" lean-forward="true" selection-start-line="60" selection-start-column="2" selection-end-line="60" selection-end-column="2" />
+                <state relative-caret-position="918">
+                  <caret line="60" column="2" selection-start-line="60" selection-start-column="2" selection-end-line="60" selection-end-column="2" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#43#82#0" expanded="true" />
@@ -96,7 +93,7 @@
           <file leaf-file-name="PostFeed.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/components/posts/PostFeed.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="212">
+                <state relative-caret-position="238">
                   <caret line="19" column="81" selection-start-line="19" selection-start-column="81" selection-end-line="19" selection-end-column="81" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
@@ -109,27 +106,13 @@
           <file leaf-file-name="PostItem.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/src/components/posts/PostItem.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="399">
-                  <caret line="82" column="37" lean-forward="true" selection-start-line="82" selection-start-column="37" selection-end-line="82" selection-end-column="37" />
+                <state relative-caret-position="450">
+                  <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#43#82#0" expanded="true" />
-                    <element signature="e#586#833#0" />
-                    <element signature="e#998#1069#0" />
-                    <element signature="e#1237#1301#0" />
-                    <element signature="e#1453#1703#0" />
-                    <element signature="e#1728#1894#0" />
-                    <element signature="e#1556#1686#0" />
+                    <element signature="e#206#243#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="feed.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/devconnector_theme/feed.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="595">
-                  <caret line="107" column="18" lean-forward="true" selection-start-line="78" selection-start-column="12" selection-end-line="107" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -137,12 +120,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="profileActions.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/src/redux/actions/profileActions.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="331">
-                  <caret line="145" selection-start-line="145" selection-end-line="150" selection-end-column="2" />
+                <state relative-caret-position="255">
+                  <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -225,10 +208,10 @@
         <option value="$PROJECT_DIR$/client/src/redux/actions/profileActions.js" />
         <option value="$PROJECT_DIR$/client/src/components/posts/PostForm.js" />
         <option value="$PROJECT_DIR$/client/src/redux/actions/types.js" />
-        <option value="$PROJECT_DIR$/client/src/redux/reducers/postReducer.js" />
-        <option value="$PROJECT_DIR$/client/src/redux/actions/postActions.js" />
         <option value="$PROJECT_DIR$/client/src/components/posts/Posts.js" />
         <option value="$PROJECT_DIR$/client/src/components/posts/PostFeed.js" />
+        <option value="$PROJECT_DIR$/client/src/redux/actions/postActions.js" />
+        <option value="$PROJECT_DIR$/client/src/redux/reducers/postReducer.js" />
         <option value="$PROJECT_DIR$/client/src/components/posts/PostItem.js" />
       </list>
     </option>
@@ -270,7 +253,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -387,6 +369,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -454,13 +437,7 @@
       <workItem from="1538465471576" duration="22323000" />
       <workItem from="1538549721151" duration="747000" />
       <workItem from="1538636060894" duration="24964000" />
-    </task>
-    <task id="LOCAL-00003" summary="Added validation to login &amp; register routes&#10;&#10;Library used: Validator&#10;&#10;Tested &amp; benchmarked with Postman">
-      <created>1537100437446</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1537100437446</updated>
+      <workItem from="1538723414852" duration="2569000" />
     </task>
     <task id="LOCAL-00004" summary="Crated the Profile MongoDB schema">
       <created>1537104453730</created>
@@ -798,11 +775,18 @@
       <option name="project" value="LOCAL" />
       <updated>1538657507062</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Added PostFeed to Posts.js with the posts of each profile&#10;-&gt; When creating a post, the post automatically shows in the feed&#10;-&gt; Functionality for each post now shows alongside each post in the feed&#10;-&gt; .. Delete functionality only available for own posts&#10;-&gt; .. Like, dislike &amp; comment functionality available for every logged in account">
+      <created>1538723619854</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1538723619855</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211441000" />
+    <option name="totallyTimeSpent" value="214010000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1290" y="0" width="2577" height="991" extended-state="0" />
@@ -811,7 +795,6 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32942554" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32942554" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32942554" />
       <window_info id="npm" order="2" side_tool="true" />
@@ -826,25 +809,26 @@
       <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32942554" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32942554" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.089799136" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24990146" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32942554" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32942554" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.19695194" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32942554" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info id="Favorites" order="3" side_tool="true" weight="0.32991722" />
     </layout-to-restore>
@@ -882,7 +866,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="The textfields in Register.js now also make use of the single TextFieldGroup component&#10;-&gt; A new optional property registerEmail of the TextFieldGroup component serves as a flag for the gravatar email information text below the email field" />
     <MESSAGE value="Created the dashboard component which holds the user's profile&#10;-&gt; Created a route for the dashboard component&#10;-&gt; Created the profile action types in ./src/redux/actions/types.js&#10;-&gt; Created profileActions which uses the new action types&#10;-&gt; Created a reducer for the profiles&#10;-&gt; Connected the dashboard component with redux and the profileActions&#10;Clicking the logout button in the navbar now clears the profile" />
     <MESSAGE value="Created a spinner component&#10;Started on the dashboard component&#10;-&gt; Added a check if the profile is null or loading&#10;-&gt; .. If loading the spinner now shows&#10;-&gt; If the profile is not empty a header shows with profile username&#10;-&gt; If the profile is empty a welcome message appears prompting the user to create a profile" />
     <MESSAGE value="Added a private route component which receives minimum 2 props&#10;-&gt; the component to go to&#10;-&gt; authentication info&#10;-&gt; .. If authenticated then the component as a prop gets rendered&#10;-&gt; .. If not authenticated the private route component redirects to /login&#10;&#10;Imported and used Switch in App.js and enclosed the PrivateRoute- component to the dashboard inside &lt;Switch&gt;&lt;/Switch&gt; tags to ensure the redirection works on this private route&#10;&#10;Check https://tylermcginnis.com/react-router-protected-routes-authentication/ for more information" />
@@ -907,7 +890,8 @@
     <MESSAGE value="Created a &quot;Not Found&quot; component which the user gets redirected to when a resource is not available (404) eg route to ./handle/&lt;nameThatIsntThere&gt;" />
     <MESSAGE value="REDUX: Created reducer and actions for the Posts functionality&#10;-&gt; Added the post-related action types&#10;-&gt; Created boilerplate for postReducer with a default action, returning the state&#10;-&gt; Added the postReducer to the combineReducer method in ./redux/reducers/index.js&#10;-&gt; Created an addPost action in postActions.js to start creating our first posts" />
     <MESSAGE value="Created the case for the action type being ADD_POST in the postReducer&#10;Created the component to add a post with route ./feed&#10;-&gt; Connected to redux&#10;-&gt; mapped state to props&#10;-&gt; Added a navbar link to go to the feed&#10;&#10;Renamed all the actions in the redux/actions folder to having a suffix Action&#10;e.g. addPostAction to have a clear name pointing to a Redux action" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the case for the action type being ADD_POST in the postReducer&#10;Created the component to add a post with route ./feed&#10;-&gt; Connected to redux&#10;-&gt; mapped state to props&#10;-&gt; Added a navbar link to go to the feed&#10;&#10;Renamed all the actions in the redux/actions folder to having a suffix Action&#10;e.g. addPostAction to have a clear name pointing to a Redux action" />
+    <MESSAGE value="Added PostFeed to Posts.js with the posts of each profile&#10;-&gt; When creating a post, the post automatically shows in the feed&#10;-&gt; Functionality for each post now shows alongside each post in the feed&#10;-&gt; .. Delete functionality only available for own posts&#10;-&gt; .. Like, dislike &amp; comment functionality available for every logged in account" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added PostFeed to Posts.js with the posts of each profile&#10;-&gt; When creating a post, the post automatically shows in the feed&#10;-&gt; Functionality for each post now shows alongside each post in the feed&#10;-&gt; .. Delete functionality only available for own posts&#10;-&gt; .. Like, dislike &amp; comment functionality available for every logged in account" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -961,10 +945,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="45" column="33" selection-start-line="44" selection-start-column="4" selection-end-line="46" selection-end-column="44" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#52#91#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -978,10 +958,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#43#69#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -989,10 +965,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#43#69#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1036,9 +1008,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
           <caret line="141" column="16" lean-forward="true" selection-start-line="115" selection-start-column="10" selection-end-line="141" selection-end-column="16" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1083,10 +1052,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4471">
           <caret line="278" lean-forward="true" selection-start-line="278" selection-end-line="278" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#43#82#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1097,9 +1062,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1117,9 +1079,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1127,15 +1086,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#1963#2252#0" />
-            <element signature="e#2476#2796#0" />
-            <element signature="e#3018#3336#0" />
-            <element signature="e#3560#3880#0" />
-            <element signature="e#4102#4423#0" />
-            <element signature="e#4649#4972#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1143,22 +1093,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="92" column="16" lean-forward="true" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="16" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#43#82#0" expanded="true" />
-            <element signature="e#470#1384#0" />
-            <element signature="e#565#610#0" />
-            <element signature="e#597#863#0" />
-            <element signature="e#880#963#0" />
-            <element signature="e#980#1160#0" />
-            <element signature="e#1177#1366#0" />
-            <element signature="e#1532#2353#0" />
-            <element signature="e#1844#1888#0" />
-            <element signature="e#1635#1917#0" />
-            <element signature="e#1934#2016#0" />
-            <element signature="e#2033#2129#0" />
-            <element signature="e#2146#2335#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1173,9 +1107,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1190,10 +1121,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#43#82#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1201,10 +1128,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
           <caret line="87" column="61" lean-forward="true" selection-start-line="87" selection-start-column="61" selection-end-line="87" selection-end-column="61" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#43#82#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1212,10 +1135,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="42" column="89" lean-forward="true" selection-start-line="42" selection-start-column="89" selection-end-line="42" selection-end-column="89" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#43#82#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1235,9 +1154,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1257,9 +1173,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#116#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1295,16 +1208,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/redux/actions/profileActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="145" selection-start-line="145" selection-end-line="150" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/posts/PostForm.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1320,40 +1223,13 @@
     <entry file="file://$PROJECT_DIR$/client/src/redux/actions/types.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/redux/reducers/postReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/redux/actions/postActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/devconnector_theme/feed.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="107" column="18" lean-forward="true" selection-start-line="78" selection-start-column="12" selection-end-line="107" selection-end-column="18" />
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/posts/PostFeed.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
+        <state relative-caret-position="238">
           <caret line="19" column="81" selection-start-line="19" selection-start-column="81" selection-end-line="19" selection-end-column="81" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -1364,8 +1240,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/posts/Posts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="60" column="2" lean-forward="true" selection-start-line="60" selection-start-column="2" selection-end-line="60" selection-end-column="2" />
+        <state relative-caret-position="918">
+          <caret line="60" column="2" selection-start-line="60" selection-start-column="2" selection-end-line="60" selection-end-column="2" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#43#82#0" expanded="true" />
@@ -1377,7 +1253,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-176">
+        <state relative-caret-position="986">
           <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -1386,19 +1262,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/devconnector_theme/feed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="107" column="18" selection-start-line="78" selection-start-column="12" selection-end-line="107" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/redux/actions/profileActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/redux/actions/postActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="38" lean-forward="true" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/redux/reducers/postReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/posts/PostItem.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="82" column="37" lean-forward="true" selection-start-line="82" selection-start-column="37" selection-end-line="82" selection-end-column="37" />
+        <state relative-caret-position="450">
+          <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#43#82#0" expanded="true" />
-            <element signature="e#586#833#0" />
-            <element signature="e#998#1069#0" />
-            <element signature="e#1237#1301#0" />
-            <element signature="e#1453#1703#0" />
-            <element signature="e#1728#1894#0" />
-            <element signature="e#1556#1686#0" />
+            <element signature="e#206#243#0" expanded="true" />
           </folding>
         </state>
       </provider>
